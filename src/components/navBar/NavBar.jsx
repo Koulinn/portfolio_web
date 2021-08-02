@@ -2,19 +2,27 @@ import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { ReactComponent as Logo }  from '../../assets/logo/Logo.svg'
 import { MdShare, MdMenu } from "react-icons/md";
+import { useScrollYPosition } from 'react-use-scroll-position';
 
-function topNavBar() {
+
+function NavBar() {
+    const scrollY = useScrollYPosition();
+
+
+
     return (
-        <Navbar expand="md" fixed="top" variant="light" className="p-0 py-2">
-            <Container fluid className="position-relative" className="p-0">
-            <div id="BG-NavBar"></div>
+        <Navbar expand="md" fixed="top" variant="light" className="p-0">
+            <Container fluid className="position-relative px-0 py-2">
+            <div id="BG-NavBar" className={scrollY > 60 ? "BG-NavBarColor" : ''}></div>
                 <Container className="p-0">
                     <div>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-0"> <MdMenu></MdMenu></Navbar.Toggle>
                         <Navbar.Brand href="#home" className="pl-3">
                             <div className="d-none d-md-flex flex-column justify-content-center align-items-center">
                                 <Logo></Logo>
-                                <span>Front-End/UX Designer</span>
+                                
+                                <span className={scrollY > 60 ?  'transitionFadeOut' : 'transitionFadeIn'}>Front-End/UX Designer
+                                </span>
         
                             </div>
                             <div className="d-flex d-md-none">
@@ -40,4 +48,4 @@ function topNavBar() {
     )
 }
 
-export default topNavBar
+export default NavBar
