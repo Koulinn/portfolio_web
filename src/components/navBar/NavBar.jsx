@@ -1,14 +1,14 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { ReactComponent as Logo }  from '../../assets/logo/Logo.svg'
-import { MdShare } from "react-icons/md";
+import { MdShare, MdMenu } from "react-icons/md";
 
 function topNavBar() {
     return (
         <Navbar expand="md" bg="light" fixed="top" variant="light">
             <Container>
                 <div>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-0"> <MdMenu></MdMenu></Navbar.Toggle>
                     <Navbar.Brand href="#home" className="pl-3">
                         <div className="d-none d-md-flex flex-column justify-content-center align-items-center">
                             <Logo></Logo>
