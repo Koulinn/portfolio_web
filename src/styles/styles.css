@@ -60,4 +60,16 @@ body {
   font-size: 1.25rem;
 }
 
+@media (min-width: 767px) {
+  h1 {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 93.75%;
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
