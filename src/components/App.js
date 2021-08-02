@@ -11,6 +11,9 @@ function App() {
     <Container className="p-0" fluid>
       <NavBar isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></NavBar>
       <Hero isTabletOrMobile={isTabletOrMobile} isMobile={isMobile} heroTextFirst={"Hello, I’m Rafa!"} heroTextSpan={"<br>"} heroTextSecond="Welcome"></Hero>
+      <Hero isTabletOrMobile={isTabletOrMobile} isMobile={isMobile} heroTextFirst={"Hello, I’m Rafa!"} heroTextSpan={"<br>"} heroTextSecond="Welcome"></Hero>
+      <Hero isTabletOrMobile={isTabletOrMobile} isMobile={isMobile} heroTextFirst={"Hello, I’m Rafa!"} heroTextSpan={"<br>"} heroTextSecond="Welcome"></Hero>
+
 
     </Container>
   );
