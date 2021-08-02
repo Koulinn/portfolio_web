@@ -4,9 +4,9 @@ import {Container} from 'react-bootstrap'
 
 function Hero() {
     return (
-        <Container className="p-0" fluid>
+        <div className="p-0 w-100">
             <BG id="BG-Hero"></BG>
-        </Container>
+        </div>
     )
 }
 

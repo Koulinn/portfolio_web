@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Heebo', sans-serif !important;
+}
+
 #BG-NavBar {
     z-index: -1;
     width: 100%;
@@ -24,7 +30,10 @@
 
 #BG-Hero {
   object-fit: cover;
-  width: 100%;
+  min-height: 640px;
+  .BG-MinHeight{
+      min-height: 640px;
+  }
 }
 
 .BG-MobileTablet-Menu{
