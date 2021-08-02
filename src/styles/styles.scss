@@ -1,88 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
 
-body{
-    font-family: 'Heebo', sans-serif !important;
+$primary : #001E55;
+$primaryBG: rgb(0 30 85 / 95%);
+$primary1 : #45B2ED;
+$primary2 : #093490;
+$dark : #18181A;
+$BGGrad : (180deg, #C9E1EE 51.61%, #ECF5FA 100%);
+$light: #E2F0F8;
+
+
+
+
+
+body {
+  font-family: "Heebo", sans-serif !important;
+  color: $dark;
 }
 
 #BG-NavBar {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: .7s;
-}
-.BG-NavBarColor{
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  filter: blur(2px);
-
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.7s;
 }
 
-.transitionFadeIn{
-    opacity: 1;
-    transition: all .7s;
-}
 
-.transitionFadeOut{
-    opacity: 0;
-    transition: all .7s;
-    height: 0;
-}
+.BG-NavBarColor {
+  background-color: $primaryBG;
+  opacity: .95;
+  svg{
+    color: $light;
 
-#BG-Hero {
-  object-fit: cover;
-  min-height: 640px;
-  .BG-MinHeight{
-      min-height: 640px;
+  }
+  span{
+    color: $light;
   }
 }
 
-.BG-MobileTablet-Menu{
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-
+.transitionFadeIn {
+  opacity: 1;
+  transition: all 0.7s;
 }
 
-.font-Icon{
-    font-size: 24px;
+.transitionFadeOut {
+  opacity: 0;
+  transition: all 0.7s;
+  height: 0;
 }
 
-.cursorPointer{
-    cursor: pointer;
+#Hero {
+  background-image: url("../assets/BG/BG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 256px inherit;
+
+  div.container {
+    padding: 128px 16px;
+    div {
+      h1 {
+        span {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
 }
 
-.shareBtn{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    height: 24px;
-    width: 32px;
+#logo-Hero {
+  svg {
+    height: 128px;
+    width: 128px;
+  }
+  .hero-TextLogo {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
 
-.Nav-font-menu{
-    @extend %Nav-Menu-Font;
-} 
-.navbar-nav > a  {
-    @extend %Nav-Menu-Font;
+.BG-MobileTablet-Menu {
+  box-shadow: inset 0 0 2000px rgba(0, 30, 85, 0.7);
 }
 
-%Nav-Menu-Font{
-    font-weight: 600;
-    font-size: 1.25rem ;
+.font-Icon {
+  font-size: 24px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.shareBtn {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 24px;
+  width: 32px;
+  margin-right: 16px;
+}
+
+.Nav-font-menu {
+  @extend %Nav-Menu-Font;
+}
+.navbar-nav > a {
+  @extend %Nav-Menu-Font;
 }
 
 
+%Nav-Menu-Font {
+  font-size: 1.25rem;
+  color: $light !important;
+}
 
 // Media query
 
-
 @media (min-width: 767px) {
-    h1{
-        font-family: Heebo;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 56px;
-        line-height: 93.75%;
-      
-        text-align: right;
-        text-transform: uppercase;
+ 
+  h1 {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 93.75%;
+  }
+
+  #Hero {
+    div.container {
+      padding: 256px 16px;
     }
+  }
+
+  .fontDark{
+    a{
+      color: $dark !important;
+    }
+  }
 }

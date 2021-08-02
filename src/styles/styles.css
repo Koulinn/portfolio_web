@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
 body {
   font-family: "Heebo", sans-serif !important;
+  color: #18181A;
 }
 
 #BG-NavBar {
@@ -12,8 +13,14 @@ body {
 }
 
 .BG-NavBarColor {
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  filter: blur(2px);
+  background-color: rgba(0, 30, 85, 0.95);
+  opacity: 0.95;
+}
+.BG-NavBarColor svg {
+  color: #E2F0F8;
+}
+.BG-NavBarColor span {
+  color: #E2F0F8;
 }
 
 .transitionFadeIn {
@@ -27,16 +34,31 @@ body {
   height: 0;
 }
 
-#BG-Hero {
-  object-fit: cover;
-  min-height: 640px;
+#Hero {
+  background-image: url("../assets/BG/BG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 256px inherit;
 }
-#BG-Hero .BG-MinHeight {
-  min-height: 640px;
+#Hero div.container {
+  padding: 128px 16px;
+}
+#Hero div.container div h1 span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#logo-Hero svg {
+  height: 128px;
+  width: 128px;
+}
+#logo-Hero .hero-TextLogo {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .BG-MobileTablet-Menu {
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 2000px rgba(0, 30, 85, 0.7);
 }
 
 .font-Icon {
@@ -53,11 +75,12 @@ body {
   align-items: baseline;
   height: 24px;
   width: 32px;
+  margin-right: 16px;
 }
 
 .Nav-font-menu, .navbar-nav > a {
-  font-weight: 600;
   font-size: 1.25rem;
+  color: #E2F0F8 !important;
 }
 
 @media (min-width: 767px) {
@@ -65,10 +88,16 @@ body {
     font-family: Heebo;
     font-style: normal;
     font-weight: normal;
-    font-size: 56px;
+    font-size: 48px;
     line-height: 93.75%;
-    text-align: right;
-    text-transform: uppercase;
+  }
+
+  #Hero div.container {
+    padding: 256px 16px;
+  }
+
+  .fontDark a {
+    color: #18181A !important;
   }
 }
 
