@@ -3,17 +3,15 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 import { ReactComponent as Logo } from '../../assets/logo/Logo.svg'
 import { MdShare, MdMenu } from "react-icons/md";
 import { useScrollYPosition } from 'react-use-scroll-position';
-import { useMediaQuery } from 'react-responsive'
 
 
-function NavBar() {
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 767px)' })
-    const isMobile = useMediaQuery({ query: '(max-width: 576px)' })
+function NavBar({isMobile, isTabletOrMobile}) {
     const scrollY = useScrollYPosition();
 
 
 
     return (
+
         <Navbar expand="md" fixed="top" variant="light" className={isTabletOrMobile ? 'BG-MobileTablet-Menu p-0' : "p-0"}>
             <Container fluid className="position-relative px-0 py-2">
                 <div id="BG-NavBar" className={scrollY > 60 ? "BG-NavBarColor" : ''}></div>
@@ -35,10 +33,10 @@ function NavBar() {
 
 
                         </Navbar.Brand>
-                            <div className="d-flex py-0 d-md-none">
-                                <span className="pt-1">Home</span>
+                        <div className="d-flex py-0 d-md-none">
+                            <span className="pt-1">Home</span>
 
-                            </div>
+                        </div>
                     </div>
                     <div className={
                         isMobile ? 'mr-3 shareBtn cursorPointer' :
@@ -61,6 +59,7 @@ function NavBar() {
                 </Container>
             </Container>
         </Navbar>
+
     )
 }
 

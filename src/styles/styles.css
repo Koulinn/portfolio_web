@@ -27,12 +27,18 @@ body {
   height: 0;
 }
 
-#BG-Hero {
-  object-fit: cover;
-  min-height: 640px;
+#Hero {
+  background-image: url("../assets/BG/BG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 256px inherit;
 }
-#BG-Hero .BG-MinHeight {
-  min-height: 640px;
+#Hero div.container {
+  padding: 256px 16px;
+}
+#Hero div.container div h1 span {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .BG-MobileTablet-Menu {
@@ -53,6 +59,7 @@ body {
   align-items: baseline;
   height: 24px;
   width: 32px;
+  margin-right: 16px;
 }
 
 .Nav-font-menu, .navbar-nav > a {
@@ -65,10 +72,8 @@ body {
     font-family: Heebo;
     font-style: normal;
     font-weight: normal;
-    font-size: 56px;
+    font-size: 48px;
     line-height: 93.75%;
-    text-align: right;
-    text-transform: uppercase;
   }
 }
 
