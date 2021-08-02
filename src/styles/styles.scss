@@ -1,100 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
 
-
-body{
-    font-family: 'Heebo', sans-serif !important;
+body {
+  font-family: "Heebo", sans-serif !important;
 }
 
 #BG-NavBar {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: .7s;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.7s;
 }
-.BG-NavBarColor{
+
+.BG-NavBarColor {
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
   filter: blur(2px);
-
 }
 
-.transitionFadeIn{
-    opacity: 1;
-    transition: all .7s;
+.transitionFadeIn {
+  opacity: 1;
+  transition: all 0.7s;
 }
 
-.transitionFadeOut{
-    opacity: 0;
-    transition: all .7s;
-    height: 0;
+.transitionFadeOut {
+  opacity: 0;
+  transition: all 0.7s;
+  height: 0;
 }
 
 #Hero {
-    background-image: url('../assets/BG/BG.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 256px inherit;
+  background-image: url("../assets/BG/BG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 256px inherit;
 
-    div.container{
-        padding: 256px 16px;
-        div {
-            h1{
-                span{
-                    font-size: 20px;
-                    font-weight: 300;
-                }
-            }
+  div.container {
+    padding: 128px 16px;
+    div {
+      h1 {
+        span {
+          font-size: 20px;
+          font-weight: 300;
         }
+      }
     }
-  
-  
+  }
 }
 
-.BG-MobileTablet-Menu{
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-
+#logo-Hero {
+  svg {
+    height: 128px;
+    width: 128px;
+  }
+  .hero-TextLogo {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
 
-.font-Icon{
-    font-size: 24px;
+.BG-MobileTablet-Menu {
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
 }
 
-.cursorPointer{
-    cursor: pointer;
+.font-Icon {
+  font-size: 24px;
 }
 
-.shareBtn{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    height: 24px;
-    width: 32px;
-    margin-right: 16px
+.cursorPointer {
+  cursor: pointer;
 }
 
-.Nav-font-menu{
-    @extend %Nav-Menu-Font;
-} 
-.navbar-nav > a  {
-    @extend %Nav-Menu-Font;
+.shareBtn {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 24px;
+  width: 32px;
+  margin-right: 16px;
 }
 
-%Nav-Menu-Font{
-    font-weight: 600;
-    font-size: 1.25rem ;
+.Nav-font-menu {
+  @extend %Nav-Menu-Font;
+}
+.navbar-nav > a {
+  @extend %Nav-Menu-Font;
 }
 
-
+%Nav-Menu-Font {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
 
 // Media query
 
-
 @media (min-width: 767px) {
-    h1{
-        font-family: Heebo;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 48px;
-        line-height: 93.75%;
+  h1 {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 93.75%;
+  }
+
+  #Hero {
+    div.container {
+      padding: 256px 16px;
     }
+  }
 }

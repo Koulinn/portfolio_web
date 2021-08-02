@@ -34,11 +34,20 @@ body {
   padding: 256px inherit;
 }
 #Hero div.container {
-  padding: 256px 16px;
+  padding: 128px 16px;
 }
 #Hero div.container div h1 span {
   font-size: 20px;
   font-weight: 300;
+}
+
+#logo-Hero svg {
+  height: 128px;
+  width: 128px;
+}
+#logo-Hero .hero-TextLogo {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .BG-MobileTablet-Menu {
@@ -74,6 +83,10 @@ body {
     font-weight: normal;
     font-size: 48px;
     line-height: 93.75%;
+  }
+
+  #Hero div.container {
+    padding: 256px 16px;
   }
 }
 
