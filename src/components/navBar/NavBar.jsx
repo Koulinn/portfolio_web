@@ -5,7 +5,7 @@ import { MdShare, MdMenu } from "react-icons/md";
 
 function topNavBar() {
     return (
-        <Navbar expand="md" bg="light" fixed="top" variant="light">
+        <Navbar expand="md" fixed="top" variant="light">
             <Container>
                 <div>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" className="border-0"> <MdMenu></MdMenu></Navbar.Toggle>
