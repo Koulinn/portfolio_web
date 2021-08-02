@@ -50,9 +50,14 @@ body {
 .shareBtn {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   height: 24px;
   width: 32px;
+}
+
+.Nav-font-menu, .navbar-nav > a {
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

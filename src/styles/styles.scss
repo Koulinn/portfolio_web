@@ -52,7 +52,19 @@ body{
 .shareBtn{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     height: 24px;
     width: 32px;
+}
+
+.Nav-font-menu{
+    @extend %Nav-Menu-Font;
+} 
+.navbar-nav > a  {
+    @extend %Nav-Menu-Font;
+}
+
+%Nav-Menu-Font{
+    font-weight: 600;
+    font-size: 1.25rem ;
 }

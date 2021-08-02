@@ -18,7 +18,7 @@ function NavBar() {
             <Container fluid className="position-relative px-0 py-2">
                 <div id="BG-NavBar" className={scrollY > 60 ? "BG-NavBarColor" : ''}></div>
                 <Container className="p-0">
-                    <div>
+                    <div className={isTabletOrMobile ? 'd-flex align-items-baseline' : ''}>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" className={isMobile ? 'border-0 pl-3' : "border-0"}> <MdMenu className="font-Icon"></MdMenu></Navbar.Toggle>
                         <Navbar.Brand href="#home" className="pl-3">
                             <div className="d-none d-md-flex flex-column justify-content-center align-items-center">
@@ -29,11 +29,16 @@ function NavBar() {
 
                             </div>
                             <div className="d-flex py-0 d-md-none">
-                                <span>Rafa</span>
+                                <span className="Nav-font-menu pt-1">Rafa</span>
 
                             </div>
 
+
                         </Navbar.Brand>
+                            <div className="d-flex py-0 d-md-none">
+                                <span className="pt-1">Home</span>
+
+                            </div>
                     </div>
                     <div className={
                         isMobile ? 'mr-3 shareBtn cursorPointer' :
