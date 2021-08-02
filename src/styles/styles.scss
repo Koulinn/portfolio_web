@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Heebo', sans-serif !important;
+}
+
+#BG-NavBar {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .7s;
+}
+.BG-NavBarColor{
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(2px);
+
+}
+
+.transitionFadeIn{
+    opacity: 1;
+    transition: all .7s;
+}
+
+.transitionFadeOut{
+    opacity: 0;
+    transition: all .7s;
+    height: 0;
+}
+
+#BG-Hero {
+  object-fit: cover;
+  min-height: 640px;
+  .BG-MinHeight{
+      min-height: 640px;
+  }
+}
+
+.BG-MobileTablet-Menu{
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+
+}
+
+.font-Icon{
+    font-size: 24px;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+
+.shareBtn{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 24px;
+    width: 32px;
+}
+
+.Nav-font-menu{
+    @extend %Nav-Menu-Font;
+} 
+.navbar-nav > a  {
+    @extend %Nav-Menu-Font;
+}
+
+%Nav-Menu-Font{
+    font-weight: 600;
+    font-size: 1.25rem ;
+}
+
+
+
+// Media query
+
+
+@media (min-width: 767px) {
+    h1{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 93.75%;
+      
+        text-align: right;
+        text-transform: uppercase;
+    }
+}
