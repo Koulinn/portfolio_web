@@ -1,5 +1,4 @@
 import { Container } from 'react-bootstrap'
-import Hero from './hero/Hero'
 import NavBar from './navBar/NavBar'
 import '../styles/styles.css'
 import { useMediaQuery } from 'react-responsive'
