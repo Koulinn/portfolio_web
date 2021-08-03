@@ -139,6 +139,11 @@ body {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
 }
+
+.flexRowAlignCenter{
+  display: flex;
+  align-items: center;
+}
 // Media query
 
 @media (min-width: 767px) {
@@ -170,7 +175,7 @@ body {
 #contact-section{
   div:first-child{
     bottom: 0;
-    svg{
+    .BGRotate{
       transform: rotate(180deg);
     }
   }

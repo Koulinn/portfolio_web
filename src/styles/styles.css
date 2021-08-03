@@ -116,6 +116,11 @@ body {
   border-radius: 20px;
 }
 
+.flexRowAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 767px) {
   h1 {
     font-family: Heebo;
@@ -140,7 +145,7 @@ body {
 #contact-section div:first-child {
   bottom: 0;
 }
-#contact-section div:first-child svg {
+#contact-section div:first-child .BGRotate {
   transform: rotate(180deg);
 }
 
