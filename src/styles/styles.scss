@@ -179,4 +179,30 @@ body {
       transform: rotate(180deg);
     }
   }
+
+  #contact-section-text{
+    h2{
+      margin-bottom: 4rem;
+    }
+    p{
+      margin: 0;
+    }
+    svg{
+      height: 32px;
+      width: 32px;
+    }
+
+    .icons-WT{
+        .telegram-icon{
+          svg{
+            transform: scale(.9);
+            circle{
+              fill: #30a7db;
+            }
+
+          
+        }
+      }
+    }
+  }
 }

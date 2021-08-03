@@ -148,5 +148,21 @@ body {
 #contact-section div:first-child .BGRotate {
   transform: rotate(180deg);
 }
+#contact-section #contact-section-text h2 {
+  margin-bottom: 4rem;
+}
+#contact-section #contact-section-text p {
+  margin: 0;
+}
+#contact-section #contact-section-text svg {
+  height: 32px;
+  width: 32px;
+}
+#contact-section #contact-section-text .icons-WT .telegram-icon svg {
+  transform: scale(0.9);
+}
+#contact-section #contact-section-text .icons-WT .telegram-icon svg circle {
+  fill: #30a7db;
+}
 
 /*# sourceMappingURL=styles.css.map */
