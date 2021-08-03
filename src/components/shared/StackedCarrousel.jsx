@@ -39,13 +39,12 @@ function StackedCarrousel(props) {
                 deviceType={props.deviceType}
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
-                centerMode={true}
                 customDot={<CustomCarouselDot/>}
             >
-                <div><img src="http://placekitten.com/200/300" alt="" /></div>
-                <div><img src="https://baconmockup.com/200/300" alt="" /></div>
-                <div><img src="https://www.placecage.com/g/200/300" alt="" /></div>
-                <div><img src="http://lorempixel.com/200/300/sports/" alt="" /></div>
+                <div><img className="carousel-image" src="http://placekitten.com/200/300" alt="" /></div>
+                <div><img className="carousel-image" src="https://baconmockup.com/200/300" alt="" /></div>
+                <div><img className="carousel-image" src="https://www.placecage.com/g/200/300" alt="" /></div>
+                <div><img className="carousel-image" src="http://lorempixel.com/200/300/sports/" alt="" /></div>
                 
             </Carousel>
 
