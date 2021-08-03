@@ -22,7 +22,7 @@ function Hero(props) {
                 :
                 <>
                     <div>
-                        <h1>{props.heroTextFirst} <span className="spanH1">{props.heroTextSpan}</span> <br></br> {props.heroTextSecond} </h1>
+                        <h1>{props.heroTextFirst} <span className="spanText">{props.heroTextSpan}</span> <br></br> {props.heroTextSecond} </h1>
                     </div>
                     <div>
                         <ThinkOut></ThinkOut>

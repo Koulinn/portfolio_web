@@ -43,7 +43,8 @@ body {
 #Hero div.container {
   padding: 128px 16px;
 }
-#Hero div.container div h1 span {
+
+.spanText {
   font-size: 20px;
   font-weight: 300;
 }

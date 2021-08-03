@@ -56,15 +56,12 @@ body {
 
   div.container {
     padding: 128px 16px;
-    div {
-      h1 {
-        span {
-          font-size: 20px;
-          font-weight: 300;
-        }
-      }
-    }
   }
+}
+
+.spanText {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 #logo-Hero {
@@ -119,20 +116,19 @@ body {
   border-color: transparent;
 }
 
-.customCarouselDot--active{
+.customCarouselDot--active {
   background: $primary1;
 }
 
-.react-multi-carousel-dot-list{
+.react-multi-carousel-dot-list {
   position: inherit !important;
 }
 
-
-.section-Margin{
+.section-Margin {
   margin-bottom: 128px;
 }
 
-.carousel-image{
+.carousel-image {
   width: 100%;
   object-fit: cover;
   height: 100%;
@@ -161,7 +157,7 @@ body {
     }
   }
 
-  .section-Margin{
+  .section-Margin {
     margin-bottom: 256px;
   }
 }

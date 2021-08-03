@@ -12,8 +12,8 @@ function Home(props) {
             <Container className="p-0 position-relative" fluid>
                 <BGBody className=""></BGBody>
                 <Container>
-                <CommonSection order="0"></CommonSection>
-                <CommonSection order={props.isTabletOrMobile? "0" : "2"}></CommonSection>
+                <CommonSection order="0" spanText="<br>"></CommonSection>
+                <CommonSection order={props.isTabletOrMobile? "0" : "2"} spanText="<br>"></CommonSection>
 
                 </Container>
             </Container>
