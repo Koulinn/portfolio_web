@@ -3,6 +3,7 @@ import Hero from './hero/Hero'
 import NavBar from './navBar/NavBar'
 import '../styles/styles.css'
 import { useMediaQuery } from 'react-responsive'
+import Pages from './shared/Pages'
 
 function App() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 767px)' })
@@ -10,7 +11,7 @@ function App() {
   return (
     <Container className="p-0" fluid>
       <NavBar isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></NavBar>
-      <Hero isTabletOrMobile={isTabletOrMobile} isMobile={isMobile} heroTextFirst={"Hello, I’m Rafa!"} heroTextSpan={"<br>"} heroTextSecond="Welcome"></Hero>
+      <Pages isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></Pages>
 
 
     </Container>
