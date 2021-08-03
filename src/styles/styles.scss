@@ -122,6 +122,10 @@ body {
   background: $primary1;
 }
 
+
+.section-Margin{
+  margin-bottom: 128px;
+}
 // Media query
 
 @media (min-width: 767px) {
@@ -143,5 +147,9 @@ body {
     a {
       color: $dark !important;
     }
+  }
+
+  .section-Margin{
+    margin-bottom: 256px;
   }
 }

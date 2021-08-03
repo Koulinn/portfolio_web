@@ -3,7 +3,7 @@ import StackedCarrousel from './StackedCarrousel'
 
 function CommonSection(props) {
     return (
-        <section>
+        <section className="section-Margin">
             <div className="row">
                 <div className="col-5 commonSection-Text" style={{order:props.order}}>
                     <h2>

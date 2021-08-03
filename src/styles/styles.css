@@ -94,6 +94,10 @@ body {
   background: #45b2ed;
 }
 
+.section-Margin {
+  margin-bottom: 128px;
+}
+
 @media (min-width: 767px) {
   h1 {
     font-family: Heebo;
@@ -109,6 +113,10 @@ body {
 
   .fontDark a {
     color: #18181a !important;
+  }
+
+  .section-Margin {
+    margin-bottom: 256px;
   }
 }
 
