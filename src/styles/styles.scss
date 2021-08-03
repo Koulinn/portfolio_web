@@ -78,10 +78,6 @@ body {
   }
 }
 
-
-.react-multi-carousel-dot-list{
-  position: inherit;
-}
 .BG-MobileTablet-Menu {
   box-shadow: inset 0 0 2000px rgba(0, 30, 85, 0.7);
 }
@@ -125,6 +121,10 @@ body {
 
 .customCarouselDot--active{
   background: $primary1;
+}
+
+.react-multi-carousel-dot-list{
+  position: inherit !important;
 }
 
 
