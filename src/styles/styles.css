@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
 body {
   font-family: "Heebo", sans-serif !important;
-  color: #18181A;
+  color: #18181a;
 }
 
 #BG-NavBar {
@@ -17,10 +17,10 @@ body {
   opacity: 0.95;
 }
 .BG-NavBarColor svg {
-  color: #E2F0F8;
+  color: #e2f0f8;
 }
 .BG-NavBarColor span {
-  color: #E2F0F8;
+  color: #e2f0f8;
 }
 
 .transitionFadeIn {
@@ -35,7 +35,7 @@ body {
 }
 
 #Hero {
-  background-image: linear-gradient(180deg, rgba(201, 225, 238, 0.15) 0%, #C9E1EE 89.58%), url("../assets/BG/BGPng.png");
+  background-image: linear-gradient(180deg, rgba(201, 225, 238, 0.15) 0%, #c9e1ee 89.58%), url("../assets/BG/BGPng.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 256px inherit;
@@ -80,7 +80,14 @@ body {
 
 .Nav-font-menu, .navbar-nav > a {
   font-size: 1.25rem;
-  color: #E2F0F8 !important;
+  color: #e2f0f8 !important;
+}
+
+.customCarouselDot {
+  background: #45b2ed;
+  border-radius: 20px;
+  width: 32px;
+  height: 8px;
 }
 
 @media (min-width: 767px) {
@@ -97,7 +104,7 @@ body {
   }
 
   .fontDark a {
-    color: #18181A !important;
+    color: #18181a !important;
   }
 }
 
