@@ -112,10 +112,14 @@ body {
 }
 
 .customCarouselDot {
-  background: $primary1;
+  background: #6aa0bd85;
   border-radius: 20px;
   width: 32px;
   height: 8px;
+}
+
+.customCarouselDot--active{
+  background: $primary1;
 }
 
 // Media query

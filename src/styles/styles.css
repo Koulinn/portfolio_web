@@ -84,10 +84,14 @@ body {
 }
 
 .customCarouselDot {
-  background: #45b2ed;
+  background: #6aa0bd85;
   border-radius: 20px;
   width: 32px;
   height: 8px;
+}
+
+.customCarouselDot--active {
+  background: #45b2ed;
 }
 
 @media (min-width: 767px) {

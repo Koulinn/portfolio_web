@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import CustomCarouselDot from './CustomCarouselDot';
 
 function StackedCarrousel(props) {
     const responsive = {
@@ -39,6 +40,7 @@ function StackedCarrousel(props) {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
                 centerMode={true}
+                customDot={<CustomCarouselDot/>}
             >
                 <div><img src="http://placekitten.com/200/300" alt="" /></div>
                 <div><img src="https://baconmockup.com/200/300" alt="" /></div>

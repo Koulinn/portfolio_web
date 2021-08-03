@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 import Hero from '../hero/Hero'
 import BGBody from '../shared/BGBody'
 import CommonSection from '../shared/CommonSection'
-import CustomCarouselDot from '../shared/CustomCarouselDot'
+
 
 function Home(props) {
     return (
