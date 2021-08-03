@@ -50,7 +50,9 @@ body {
 }
 
 #Hero {
-  background-image: url("../assets/BG/BG.svg");
+  background-image: 
+  linear-gradient(180deg, rgba(201, 225, 238, 0.15) 0%, #C9E1EE 89.58%),
+  url("../assets/BG/BGPng.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 256px inherit;
@@ -67,6 +69,7 @@ body {
     }
   }
 }
+
 
 #logo-Hero {
   svg {
