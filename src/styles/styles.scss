@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
 
-$primary : #001E55;
+$primary: #001e55;
 $primaryBG: rgb(0 30 85 / 95%);
-$primary1 : #45B2ED;
-$primary2 : #093490;
-$dark : #18181A;
-$BGGrad : (180deg, #C9E1EE 51.61%, #ECF5FA 100%);
-$light: #E2F0F8;
-
-
-
-
+$primary1: #45b2ed;
+$primary2: #093490;
+$dark: #18181a;
+$BGGrad: (180deg, #c9e1ee 51.61%, #ecf5fa 100%);
+$light: #e2f0f8;
 
 body {
   font-family: "Heebo", sans-serif !important;
@@ -25,15 +21,13 @@ body {
   transition: 0.7s;
 }
 
-
 .BG-NavBarColor {
   background-color: $primaryBG;
-  opacity: .95;
-  svg{
+  opacity: 0.95;
+  svg {
     color: $light;
-
   }
-  span{
+  span {
     color: $light;
   }
 }
@@ -50,7 +44,12 @@ body {
 }
 
 #Hero {
-  background-image: url("../assets/BG/BG.svg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(201, 225, 238, 0.15) 0%,
+      #c9e1ee 89.58%
+    ),
+    url("../assets/BG/BGPng.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 256px inherit;
@@ -107,16 +106,41 @@ body {
   @extend %Nav-Menu-Font;
 }
 
-
 %Nav-Menu-Font {
   font-size: 1.25rem;
   color: $light !important;
 }
 
+.customCarouselDot {
+  background: #6aa0bd85;
+  border-radius: 20px;
+  width: 32px;
+  height: 8px;
+  border-color: transparent;
+}
+
+.customCarouselDot--active{
+  background: $primary1;
+}
+
+.react-multi-carousel-dot-list{
+  position: inherit !important;
+}
+
+
+.section-Margin{
+  margin-bottom: 128px;
+}
+
+.carousel-image{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  max-height: 256px;
+}
 // Media query
 
 @media (min-width: 767px) {
- 
   h1 {
     font-family: Heebo;
     font-style: normal;
@@ -131,9 +155,13 @@ body {
     }
   }
 
-  .fontDark{
-    a{
+  .fontDark {
+    a {
       color: $dark !important;
     }
+  }
+
+  .section-Margin{
+    margin-bottom: 256px;
   }
 }
