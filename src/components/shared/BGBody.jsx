@@ -1,8 +1,12 @@
 import React from 'react'
+import { ReactComponent as CurvedBG } from '../../assets/BG/BGBody.svg'
+
+
 
 function BGBody() {
     return (
-        <div>
+        <div className="position-absolute w-100">
+            <CurvedBG></CurvedBG>
             
         </div>
     )
