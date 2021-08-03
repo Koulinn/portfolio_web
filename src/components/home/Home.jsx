@@ -13,7 +13,7 @@ function Home(props) {
                 <BGBody className=""></BGBody>
                 <Container>
                 <CommonSection order="0"></CommonSection>
-                <CommonSection order="2"></CommonSection>
+                <CommonSection order={props.isTabletOrMobile? "0" : "2"}></CommonSection>
                 <CommonSection order="0"></CommonSection>
 
                 </Container>

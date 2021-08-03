@@ -5,7 +5,7 @@ function CommonSection(props) {
     return (
         <section className="section-Margin">
             <div className="row">
-                <div className="col-5 commonSection-Text" style={{order:props.order}}>
+                <div className="col-12 col-md-5 commonSection-Text" style={{order:props.order}}>
                     <h2>
                         Section Title
                     </h2>
@@ -15,7 +15,7 @@ function CommonSection(props) {
 
                 </div>
 
-                <div className="col-7 sectionImgs">
+                <div className="col-12 col-md-7 sectionImgs">
                     <StackedCarrousel></StackedCarrousel>
 
                 </div>
