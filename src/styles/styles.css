@@ -111,6 +111,11 @@ body {
   max-height: 256px;
 }
 
+.ImgShadowEffect {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+}
+
 @media (min-width: 767px) {
   h1 {
     font-family: Heebo;
@@ -131,6 +136,12 @@ body {
   .section-Margin {
     margin-bottom: 256px;
   }
+}
+#contact-section div:first-child {
+  bottom: 0;
+}
+#contact-section div:first-child svg {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=styles.css.map */
