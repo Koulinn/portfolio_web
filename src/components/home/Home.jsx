@@ -7,7 +7,7 @@ import CommonSection from '../shared/CommonSection'
 
 function Home(props) {
     return (
-        <main>
+        <>
             <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"Hello, I’m Rafa!"} heroTextSpan={"<br>"} heroTextSecond="Welcome"></Hero>
             <Container className="p-0 position-relative" fluid>
                 <BGBody className=""></BGBody>
@@ -19,7 +19,7 @@ function Home(props) {
             </Container>
 
 
-        </main>
+        </>
     )
 }
 
