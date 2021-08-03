@@ -10,10 +10,12 @@ function App() {
   const isMobile = useMediaQuery({ query: '(max-width: 576px)' })
   return (
     <Container className="p-0" fluid>
-      <header><NavBar isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></NavBar></header>
+      <header>
+        <NavBar isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></NavBar>
+      </header>
       <main>
         <Pages isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></Pages>
-        <Contact isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></Contact>
+        <Contact isTabletOrMobile={isTabletOrMobile} isMobile={isMobile} spanText="<br>"></Contact>
       </main>
       <footer>
         
