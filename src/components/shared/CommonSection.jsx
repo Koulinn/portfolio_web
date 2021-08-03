@@ -1,5 +1,5 @@
 import React from 'react'
-import StackedCarrousel from './StackedCarrousel'
+import StackedCarrousel from './Carousel/StackedCarrousel'
 
 function CommonSection(props) {
     return (

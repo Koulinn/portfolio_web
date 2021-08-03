@@ -40,6 +40,7 @@ function StackedCarrousel(props) {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
                 customDot={<CustomCarouselDot/>}
+                renderButtonGroupOutside={true}
             >
                 <div><img className="carousel-image" src="http://placekitten.com/200/300" alt="" /></div>
                 <div><img className="carousel-image" src="https://baconmockup.com/200/300" alt="" /></div>
