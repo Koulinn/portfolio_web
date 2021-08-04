@@ -59,6 +59,17 @@ body {
   }
 }
 
+.invert{
+  transform: rotate(180deg);
+}
+
+.background{
+  max-height: 292px;
+  path{
+    fill:linear-gradient($BGGrad);
+  }
+}
+
 .spanText {
   font-size: 20px;
   font-weight: 300;
@@ -173,14 +184,7 @@ body {
 }
 
 #contact-section {
-  div:first-child {
-    bottom: 0;
-    .BGRotate {
-      transform: rotate(180deg);
-    }
-  }
-
-  #contact-section-text {
+    #contact-section-text {
     h2 {
       margin-bottom: 2rem;
     }

@@ -44,6 +44,17 @@ body {
   padding: 128px 16px;
 }
 
+.invert {
+  transform: rotate(180deg);
+}
+
+.background {
+  max-height: 292px;
+}
+.background path {
+  fill: linear-gradient(180deg, #c9e1ee 51.61%, #ecf5fa 100%);
+}
+
 .spanText {
   font-size: 20px;
   font-weight: 300;
@@ -141,12 +152,6 @@ body {
   .section-Margin {
     margin-bottom: 256px;
   }
-}
-#contact-section div:first-child {
-  bottom: 0;
-}
-#contact-section div:first-child .BGRotate {
-  transform: rotate(180deg);
 }
 #contact-section #contact-section-text h2 {
   margin-bottom: 2rem;
