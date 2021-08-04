@@ -1,11 +1,29 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
+import { ReactComponent as Logo } from '../../../assets/logo/Logo.svg'
+import ContactText from '../Contact/ContactText'
+
 
 function Footer() {
     return (
-        <div id="footer" className="container px-0">
+        <div id="footer" className="container">
             <Row>
-                <div className="col"></div>
+                <div className="col-5">
+                    <div className="d-flex flex-column align-content-center justify-content-center logo-footer">
+                    
+                            
+                               
+                                    
+                                        <Logo></Logo>
+                                        <span>Front-End/UX Designer</span>
+                                    
+                                    
+                               
+                        
+                    </div>
+                    <ContactText footer={true}></ContactText>
+
+                </div>
                 <div className="col">
                     <nav>
                         <ul>

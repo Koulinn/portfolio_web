@@ -7,7 +7,12 @@ $primary2: #093490;
 $dark: #18181a;
 $BGGrad: (180deg, #c9e1ee 51.61%, #ecf5fa 100%);
 $light: #e2f0f8;
-$BGFooter: (180deg, rgba(201, 225, 238, 0.5) 0%, rgba(201, 225, 238, 0.075) 100%), rgba(196, 196, 196, 0.6);
+$BGFooter: (
+    180deg,
+    rgba(201, 225, 238, 0.5) 0%,
+    rgba(201, 225, 238, 0.075) 100%
+  ),
+  rgba(196, 196, 196, 0.6);
 
 body {
   font-family: "Heebo", sans-serif !important;
@@ -20,6 +25,13 @@ body {
   height: 100%;
   position: absolute;
   transition: 0.7s;
+}
+
+#logo-NavBar {
+  svg {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .BG-NavBarColor {
@@ -186,41 +198,59 @@ body {
 
 #contact-section {
   padding-bottom: 128px;
-  #contact-section-text {
-    h2 {
-      margin-bottom: 2rem;
-    }
-    p {
-      margin: 0;
-    }
-    svg {
-      height: 32px;
-      width: 32px;
-    }
-
-    .icons-WT {
-      .telegram-icon {
-        svg {
-          transform: scale(0.9);
-          circle {
-            fill: #30a7db;
-          }
-        }
-      }
-    }
-  }
   .ImgShadowEffect {
     max-height: 290px;
   }
 }
 
+#contact-section-text {
+  h2 {
+    margin-bottom: 2rem;
+  }
+  p {
+    margin: 0;
+  }
+  svg {
+    height: 32px;
+    width: 32px;
+  }
 
+  .icons-WT {
+    .telegram-icon {
+      svg {
+        transform: scale(0.9);
+        circle {
+          fill: #30a7db;
+        }
+      }
+    }
+  }
+}
 
-footer{
+footer {
   padding-top: 128px;
   background: linear-gradient($BGFooter);
-  #footer{
-    nav ul li{
+  #footer {
+    .logo-footer {
+      margin-bottom: 64px;
+      svg {
+        width: 156px;
+        height: 156px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+      }
+
+      span {
+        // text-align: center;
+      }
+    }
+
+    #contact-section-text {
+      h2 {
+        display: none;
+      }
+    }
+    nav ul li {
       list-style: none;
       text-align: center;
     }

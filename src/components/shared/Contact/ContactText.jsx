@@ -25,7 +25,7 @@ function ContactText(props) {
                                 </div>
                                 
                             </div>
-                            <p>Or drop a message</p>
+                            {props.footer? <p>Rafael Verzola Peres de Lima</p> : ''}
                         </div>
     )
 }
