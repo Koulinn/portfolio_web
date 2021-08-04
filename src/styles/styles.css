@@ -183,7 +183,7 @@ body {
 }
 
 footer {
-  padding-top: 128px;
+  padding: 128px 0px;
   background: linear-gradient(180deg, rgba(201, 225, 238, 0.5) 0%, rgba(201, 225, 238, 0.075) 100%, rgba(196, 196, 196, 0.6));
 }
 footer #footer .logo-footer {
@@ -201,6 +201,9 @@ footer #footer #contact-section-text h2 {
 footer #footer nav ul li {
   list-style: none;
   text-align: center;
+}
+footer #footer .socialMedia svg {
+  height: 48px;
 }
 
 /*# sourceMappingURL=styles.css.map */

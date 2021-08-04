@@ -228,7 +228,7 @@ body {
 }
 
 footer {
-  padding-top: 128px;
+  padding: 128px 0px;
   background: linear-gradient($BGFooter);
   #footer {
     .logo-footer {
@@ -238,10 +238,6 @@ footer {
         height: 156px;
         margin-left: 10px;
         margin-bottom: 8px;
-      }
-
-      span {
-        // text-align: center;
       }
     }
 
@@ -253,6 +249,12 @@ footer {
     nav ul li {
       list-style: none;
       text-align: center;
+    }
+
+    .socialMedia{
+      svg{
+        height: 48px;
+      }
     }
   }
 }
