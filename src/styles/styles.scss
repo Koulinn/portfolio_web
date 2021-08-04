@@ -59,14 +59,14 @@ body {
   }
 }
 
-.invert{
+.invert {
   transform: rotate(180deg);
 }
 
-.background{
+.background {
   max-height: 292px;
-  path{
-    fill:linear-gradient($BGGrad);
+  path {
+    fill: linear-gradient($BGGrad);
   }
 }
 
@@ -184,7 +184,8 @@ body {
 }
 
 #contact-section {
-    #contact-section-text {
+  padding-bottom: 128px;
+  #contact-section-text {
     h2 {
       margin-bottom: 2rem;
     }
@@ -207,10 +208,7 @@ body {
       }
     }
   }
-  .ImgShadowEffect{
+  .ImgShadowEffect {
     max-height: 290px;
   }
 }
-
-
-
