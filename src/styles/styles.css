@@ -165,4 +165,16 @@ body {
   fill: #30a7db;
 }
 
+#contact-section-text form {
+  /* Firefox */
+}
+#contact-section-text form input::-webkit-outer-spin-button,
+#contact-section-text form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#contact-section-text form input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /*# sourceMappingURL=styles.css.map */
