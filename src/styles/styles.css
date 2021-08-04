@@ -176,5 +176,26 @@ body {
 #contact-section-text form input[type=number] {
   -moz-appearance: textfield;
 }
+#contact-section-text .PhoneInput input {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #495057;
+}
+
+.PhoneInput--focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.PhoneInput--focus input:focus-visible {
+  width: 100%;
+  border: none;
+  outline: none;
+}
 
 /*# sourceMappingURL=styles.css.map */

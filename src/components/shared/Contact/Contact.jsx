@@ -17,8 +17,8 @@ function Contact(props) {
                         <ContactForm/>
                     </div>
     
-                    <div className=" d-none col-12 col-md-6 d-md-flex justify-content-md-end">
-                        <img className="ImgShadowEffect" src={UnitedImg} alt="" />
+                    <div className=" d-none col-12 col-md-6 d-md-flex justify-content-md-end align-items-md-center">
+                        <img className="ImgShadowEffect h-50" src={UnitedImg} alt="" />
                     </div>
                 </Row>
                 
