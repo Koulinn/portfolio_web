@@ -3,14 +3,25 @@ import NavBar from './navBar/NavBar'
 import '../styles/styles.css'
 import { useMediaQuery } from 'react-responsive'
 import Pages from './shared/Pages'
+import Contact from './shared/Contact/Contact'
 
 function App() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 767px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 576px)' })
   return (
     <Container className="p-0" fluid>
-      <NavBar isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></NavBar>
-      <Pages isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></Pages>
+      <header>
+        <NavBar isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></NavBar>
+      </header>
+      <main>
+        <Pages isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></Pages>
+        <section className="">
+          <Contact isTabletOrMobile={isTabletOrMobile} isMobile={isMobile} spanText="<br>"></Contact>
+        </section>
+      </main>
+      <footer>
+        
+      </footer>
 
 
     </Container>

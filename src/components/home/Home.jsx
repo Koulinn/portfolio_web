@@ -1,25 +1,25 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Hero from '../hero/Hero'
-import BGBody from '../shared/BGBody'
 import CommonSection from '../shared/CommonSection'
+import BGTop from '../shared/BGTop'
 
 
 function Home(props) {
     return (
-        <main>
+        <>
             <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"Hello, I’m Rafa!"} heroTextSpan={"<br>"} heroTextSecond="Welcome"></Hero>
             <Container className="p-0 position-relative" fluid>
-                <BGBody className=""></BGBody>
+                <BGTop></BGTop>
                 <Container>
-                <CommonSection order="0"></CommonSection>
-                <CommonSection order={props.isTabletOrMobile? "0" : "2"}></CommonSection>
+                <CommonSection order="0" spanText="<br>"></CommonSection>
+                <CommonSection order={props.isTabletOrMobile? "0" : "2"} spanText="<br>"></CommonSection>
 
                 </Container>
             </Container>
 
 
-        </main>
+        </>
     )
 }
 

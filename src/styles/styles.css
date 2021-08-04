@@ -43,7 +43,19 @@ body {
 #Hero div.container {
   padding: 128px 16px;
 }
-#Hero div.container div h1 span {
+
+.invert {
+  transform: rotate(180deg);
+}
+
+.background {
+  max-height: 292px;
+}
+.background path {
+  fill: linear-gradient(180deg, #c9e1ee 51.61%, #ecf5fa 100%);
+}
+
+.spanText {
   font-size: 20px;
   font-weight: 300;
 }
@@ -110,6 +122,16 @@ body {
   max-height: 256px;
 }
 
+.ImgShadowEffect {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+}
+
+.flexRowAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 767px) {
   h1 {
     font-family: Heebo;
@@ -130,6 +152,28 @@ body {
   .section-Margin {
     margin-bottom: 256px;
   }
+}
+#contact-section {
+  padding-bottom: 128px;
+}
+#contact-section #contact-section-text h2 {
+  margin-bottom: 2rem;
+}
+#contact-section #contact-section-text p {
+  margin: 0;
+}
+#contact-section #contact-section-text svg {
+  height: 32px;
+  width: 32px;
+}
+#contact-section #contact-section-text .icons-WT .telegram-icon svg {
+  transform: scale(0.9);
+}
+#contact-section #contact-section-text .icons-WT .telegram-icon svg circle {
+  fill: #30a7db;
+}
+#contact-section .ImgShadowEffect {
+  max-height: 290px;
 }
 
 /*# sourceMappingURL=styles.css.map */

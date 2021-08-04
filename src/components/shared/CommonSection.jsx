@@ -7,7 +7,7 @@ function CommonSection(props) {
             <div className="row">
                 <div className="col-12 col-md-6 commonSection-Text" style={{order:props.order}}>
                     <h2>
-                        Section Title
+                        Section Title <span className="spanText">{props.spanText}</span>
                     </h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci quia a ipsa quid
