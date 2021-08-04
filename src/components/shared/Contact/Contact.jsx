@@ -2,7 +2,6 @@ import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import UnitedImg from '../../../assets/Imgs/united.png'
 import BGBody from '../BGBody'
-import ContactForm from './ContactForm'
 import ContactText from './ContactText'
 
 
@@ -14,11 +13,10 @@ function Contact(props) {
                 <Row>
                     <div className="col-12 col-md-6">
                         <ContactText spanText={props.spanText}/>
-                        <ContactForm/>
                     </div>
     
-                    <div className=" d-none col-12 col-md-6 d-md-flex justify-content-md-end align-items-md-center">
-                        <img className="ImgShadowEffect h-50" src={UnitedImg} alt="" />
+                    <div className=" d-none col-md-6 d-md-flex justify-content-md-end">
+                        <img className="ImgShadowEffect" src={UnitedImg} alt="" />
                     </div>
                 </Row>
                 

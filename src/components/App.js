@@ -15,7 +15,9 @@ function App() {
       </header>
       <main>
         <Pages isTabletOrMobile={isTabletOrMobile} isMobile={isMobile}></Pages>
-        <Contact isTabletOrMobile={isTabletOrMobile} isMobile={isMobile} spanText="<br>"></Contact>
+        <section className="">
+          <Contact isTabletOrMobile={isTabletOrMobile} isMobile={isMobile} spanText="<br>"></Contact>
+        </section>
       </main>
       <footer>
         
