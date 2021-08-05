@@ -314,6 +314,9 @@ footer {
       }
 
       a.active {
+        li{
+          font-weight: 600;
+        }
         li::before {
           @extend %menuEffectActive;
         }

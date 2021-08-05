@@ -245,6 +245,9 @@ footer #footer nav ul a {
 footer #footer nav ul a li {
   display: inline;
 }
+footer #footer nav ul a.active li {
+  font-weight: 600;
+}
 footer #footer nav ul a.active:hover li::before {
   width: 32px;
   height: 4px;
