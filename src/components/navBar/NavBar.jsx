@@ -43,15 +43,6 @@ function NavBar({isMobile, isTabletOrMobile}) {
 
                         </div>
                     </div>
-                    <div className={
-                        isMobile ? 'mr-3 shareBtn cursorPointer' :
-                            isTabletOrMobile ? 'shareBtn cursorPointer' :
-                                'd-md-none'
-                    }
-                    >
-                        <MdShare className="font-Icon"></MdShare>
-
-                    </div>
                     <Navbar.Collapse id="responsive-navbar-nav" className="mt-3 my-md-0">
                         <Nav className={isTabletOrMobile || (scrollY > 60) ? 'pl-3 text-center align-items-center mx-auto' : "mx-auto fontDark"}>
                             <NavLink to="/" exact activeClassName="active">Home</NavLink>

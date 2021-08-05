@@ -150,15 +150,6 @@ a:hover {
   cursor: pointer;
 }
 
-.shareBtn {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  height: 24px;
-  width: 32px;
-  margin-right: 16px;
-}
-
 .Nav-font-menu {
   @extend %Nav-Menu-Font;
 }
