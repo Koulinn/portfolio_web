@@ -2,10 +2,9 @@ import React from 'react'
 import { Row } from 'react-bootstrap'
 import { ReactComponent as Logo } from '../../../assets/logo/Logo.svg'
 import ContactText from '../Contact/ContactText'
-import { ReactComponent as LinLogo } from '../../../assets/Icons/linkedin.svg'
-import { ReactComponent as GitLogo } from '../../../assets/Icons/GitHub-logo 1.svg'
-import { ReactComponent as IxDFLogo } from '../../../assets/Icons/IxDF.svg'
 import { ReactComponent as ThinkOut } from '../../../assets/Imgs/thinkOutside.svg'
+import FooterSocialMedia from './FooterSocialMedia'
+import FooterNav from './FooterNav'
 
 
 
@@ -21,14 +20,7 @@ function Footer() {
 
                 </div>
                 <div className="col d-flex flex-column justify-content-between mt-5 mt-md-0">
-                    <nav>
-                        <ul className="pl-0">
-                            <li>About</li>
-                            <li className="my-2">Portfolio</li>
-                            <li>Resume</li>
-                            <li className="mt-2">Contact</li>
-                        </ul>
-                    </nav>
+                    <FooterNav />
 
                 </div>
                 <div className="d-none col d-md-flex justify-content-end thinkOut-footer">
@@ -36,12 +28,7 @@ function Footer() {
                 </div>
             </Row>
             <Row>
-                <div className="col mt-5 socialMedia justify-content-center justify-content-md-end d-flex">
-                    <div><LinLogo className="cursorPointer" /></div>
-                    <div className="mx-4 "><GitLogo className="cursorPointer" /></div>
-                    <div><IxDFLogo className="cursorPointer" /></div>
-                </div>
-
+                <FooterSocialMedia />
             </Row>
 
 
