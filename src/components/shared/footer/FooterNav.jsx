@@ -9,7 +9,7 @@ function FooterNav() {
                 <NavLink to="/" exact activeClassName="active"><li className="">Home</li></NavLink>
                 <NavLink to="/about" exact activeClassName="active" className="mt-3"><li className="">About</li></NavLink>
                 <NavLink to="/portfolio" exact activeClassName="active" className="my-3"><li>Portfolio</li></NavLink>
-                <NavLink to="/resume" exact ><li>Resume</li></NavLink>
+                <NavLink to="/resume" exact activeClassName="active" ><li>Resume</li></NavLink>
             </ul>
         </nav>
     )
