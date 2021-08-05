@@ -58,7 +58,7 @@ function NavBar({isMobile, isTabletOrMobile}) {
                             <NavLink to="/about" exact activeClassName="active" className="mx-0 mx-md-3 my-3 my-md-0">About</NavLink>
                             <NavLink to="/portfolio" exact activeClassName="active">Portfolio</NavLink>
                             <NavLink to="/resume" exact activeClassName="active" className="mx-0 mx-md-3 my-3 my-md-0">Resume</NavLink>
-                            <Nav.Link href="#" className="p-0">Contact</Nav.Link>
+                            {/* <Nav.Link href="#" className="p-0">Contact</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
