@@ -4,6 +4,10 @@ import { ReactComponent as Logo } from '../../assets/logo/Logo.svg'
 import { ReactComponent as WhiteLogo } from '../../assets/logo/whiteLogo.svg'
 import { MdShare, MdMenu } from "react-icons/md";
 import { useScrollYPosition } from 'react-use-scroll-position';
+import { withRouter } from "react-router"
+import { NavLink } from 'react-router-dom'
+
+
 
 
 function NavBar({isMobile, isTabletOrMobile}) {
@@ -64,4 +68,4 @@ function NavBar({isMobile, isTabletOrMobile}) {
     )
 }
 
-export default NavBar
+export default withRouter(NavBar)
