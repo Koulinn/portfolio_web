@@ -12,7 +12,7 @@ function Footer() {
     return (
         <div id="footer" className="container">
             <Row>
-                <div className="col-4">
+                <div className="col-12 col-md-5">
                     <div className="d-flex flex-column align-content-center justify-content-center logo-footer">
                         <Logo></Logo>
                     </div>
@@ -30,7 +30,7 @@ function Footer() {
                     </nav>
 
                 </div>
-                <div className="col d-flex justify-content-end thinkOut-footer">
+                <div className="d-none col d-md-flex justify-content-end thinkOut-footer">
                     <ThinkOut />
                 </div>
             </Row>
