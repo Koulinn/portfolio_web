@@ -169,34 +169,36 @@ a:hover {
     text-decoration: none;
     width: fit-content;
   }
-  a::before{
+  a::before {
     @extend %menuEffectInitial;
   }
-  a:hover::before{
-      @extend %menuEffectActive;
-      @extend %menuEffectHoverGrey;
-      background-color: #e2f0f8;
+  a:hover::before {
+    @extend %menuEffectActive;
+    @extend %menuEffectHoverGrey;
+    background-color: #e2f0f8;
   }
 
-  a.active{
+  a.active {
     font-weight: 500;
   }
-  a.active::before{
+  a.active::before {
     @extend %menuEffectActive;
   }
-  a.active:hover::before{
+  a.active:hover::before {
     @extend %menuEffectActive;
     width: 32px;
     height: 4px;
   }
 }
 
-.navbar-nav.fontDark{
-  a:hover::before{
+.navbar-nav.fontDark {
+  a:hover::before {
     @extend %menuEffectActive;
     @extend %menuEffectHoverGrey;
-}
-
+  }
+  a.active:hover::before {
+    background-color: $primary1;
+  }
 }
 
 %Nav-Menu-Font {

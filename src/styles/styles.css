@@ -150,6 +150,10 @@ a:hover {
   height: 4px;
 }
 
+.navbar-nav.fontDark a.active:hover::before {
+  background-color: #45b2ed;
+}
+
 .Nav-font-menu, .navbar-nav a {
   font-size: 1.25rem;
   color: #e2f0f8 !important;
