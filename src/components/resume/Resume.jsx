@@ -5,7 +5,7 @@ import Hero from '../hero/Hero'
 function Resume(props) {
     return (
         <>
-            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"Hello, Welcome!"} heroTextSpan={"<br>"} heroTextSecond="This is Rafa"></Hero>
+            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"My professional journey"} heroTextSpan={"<br>"} heroTextSecond="took me to lots of places"></Hero>
 
 
         </>

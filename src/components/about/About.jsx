@@ -5,7 +5,7 @@ import Hero from '../hero/Hero'
 function About(props) {
     return (
         <>
-            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"I love"} heroTextSpan={"<br>"} heroTextSecond="journeys"></Hero>
+            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"I'm quite a curious"} heroTextSpan={"<br>"} heroTextSecond="person"></Hero>
 
 
         </>
