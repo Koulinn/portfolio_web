@@ -198,11 +198,12 @@ body {
   footer {
     #footer {
       .logo-footer {
-        
         svg {
-         
           margin-left: 10px;
         }
+      }
+      nav ul {
+        transform: translateX(-9%);
       }
     }
   }
@@ -258,25 +259,22 @@ footer {
       }
     }
     nav ul {
-      transform: translateX(-9%);
-    
       li {
         list-style: none;
         text-align: center;
       }
     }
 
-    .socialMedia{
-      svg{
+    .socialMedia {
+      svg {
         height: 48px;
       }
     }
-    .thinkOut-footer{
-      svg{
+    .thinkOut-footer {
+      svg {
         width: 144px;
         height: 144px;
       }
-      
-    } 
+    }
   }
 }

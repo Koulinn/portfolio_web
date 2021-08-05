@@ -161,6 +161,9 @@ body {
   footer #footer .logo-footer svg {
     margin-left: 10px;
   }
+  footer #footer nav ul {
+    transform: translateX(-9%);
+  }
 }
 #contact-section {
   padding-bottom: 128px;
@@ -200,9 +203,6 @@ footer #footer .logo-footer svg {
 }
 footer #footer #contact-section-text h2 {
   display: none;
-}
-footer #footer nav ul {
-  transform: translateX(-9%);
 }
 footer #footer nav ul li {
   list-style: none;

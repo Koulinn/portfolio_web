@@ -14,12 +14,12 @@ function Footer() {
             <Row>
                 <div className="col-12 col-md-5">
                     <div className="d-flex flex-column align-content-center justify-content-center logo-footer">
-                        <Logo></Logo>
+                        <Logo className="align-self-center align-self-md-auto"></Logo>
                     </div>
                     <ContactText footer={true}></ContactText>
 
                 </div>
-                <div className="col d-flex flex-column justify-content-between">
+                <div className="col d-flex flex-column justify-content-between mt-5">
                     <nav>
                         <ul className="pl-0">
                             <li>About</li>
@@ -35,7 +35,7 @@ function Footer() {
                 </div>
             </Row>
             <Row>
-                <div className="col mt-5 socialMedia justify-content-end d-flex">
+                <div className="col mt-5 socialMedia justify-content-center justify-content-md-end d-flex">
                     <div><LinLogo className="cursorPointer" /></div>
                     <div className="mx-4 "><GitLogo className="cursorPointer" /></div>
                     <div><IxDFLogo className="cursorPointer" /></div>
