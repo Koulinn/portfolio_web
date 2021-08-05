@@ -1,7 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
+footer #footer nav ul li {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+footer #footer nav ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 4px;
+  width: 32px;
+  background-color: #001e55;
+  border-radius: 20px;
+  transform: translateX(64px);
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+footer #footer nav ul a.active:hover li::before, footer #footer nav ul a.active li::before, footer #footer nav ul a:hover li::before {
+  transform: translateX(0px);
+  opacity: 1;
+  background-color: #45b2ed;
+}
+
+footer #footer nav ul a:hover li::before {
+  opacity: 1;
+  background-color: #18181a;
+  height: 2px;
+  width: 100%;
+}
+
 body {
   font-family: "Heebo", sans-serif !important;
   color: #18181a;
+}
+
+p {
+  font-size: 18px;
 }
 
 #BG-NavBar {
@@ -15,6 +50,9 @@ body {
 #logo-NavBar svg {
   width: 64px;
   height: 64px;
+}
+#logo-NavBar span {
+  font-size: 16px;
 }
 
 .BG-NavBarColor {
@@ -61,17 +99,13 @@ body {
 }
 
 .spanText {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 
 #logo-Hero svg {
   height: 128px;
   width: 128px;
-}
-#logo-Hero .hero-TextLogo {
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .BG-MobileTablet-Menu {
@@ -204,9 +238,24 @@ footer #footer .logo-footer svg {
 footer #footer #contact-section-text h2 {
   display: none;
 }
+footer #footer nav ul a {
+  text-decoration: none;
+  color: #18181a;
+}
+footer #footer nav ul a li {
+  display: inline;
+}
+footer #footer nav ul a.active li {
+  font-weight: 600;
+}
+footer #footer nav ul a.active:hover li::before {
+  width: 32px;
+  height: 4px;
+}
 footer #footer nav ul li {
   list-style: none;
   text-align: center;
+  position: relative;
 }
 footer #footer .socialMedia svg {
   height: 48px;
