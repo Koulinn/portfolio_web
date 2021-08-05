@@ -29,16 +29,18 @@ function Footer() {
                         </ul>
                     </nav>
 
-                    <div className="socialMedia d-flex justify-content-between">
-                        <div><LinLogo/></div>
-                        <div><GitLogo/></div>
-                        <div><IxDFLogo/></div>
-                    </div>
+                </div>
+                <div className="col d-flex justify-content-end thinkOut-footer">
+                    <ThinkOut />
+                </div>
+            </Row>
+            <Row>
+                <div className="col mt-5 socialMedia justify-content-end d-flex">
+                    <div><LinLogo className="cursorPointer" /></div>
+                    <div className="mx-4 "><GitLogo className="cursorPointer" /></div>
+                    <div><IxDFLogo className="cursorPointer" /></div>
+                </div>
 
-                </div>
-                <div className="col d-flex justify-content-end">
-                    <ThinkOut/>
-                </div>
             </Row>
 
 

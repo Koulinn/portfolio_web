@@ -205,5 +205,9 @@ footer #footer nav ul li {
 footer #footer .socialMedia svg {
   height: 48px;
 }
+footer #footer .thinkOut-footer svg {
+  width: 144px;
+  height: 144px;
+}
 
 /*# sourceMappingURL=styles.css.map */
