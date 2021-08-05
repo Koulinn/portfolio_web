@@ -4,6 +4,10 @@ body {
   color: #18181a;
 }
 
+p {
+  font-size: 18px;
+}
+
 #BG-NavBar {
   z-index: -1;
   width: 100%;
@@ -61,7 +65,7 @@ body {
 }
 
 .spanText {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 
