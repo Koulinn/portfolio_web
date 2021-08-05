@@ -1,10 +1,14 @@
 import React from 'react'
+import Hero from '../hero/Hero'
 
-function Resume() {
+
+function Resume(props) {
     return (
-        <div>
-            
-        </div>
+        <>
+            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"Hello, Welcome!"} heroTextSpan={"<br>"} heroTextSecond="This is Rafa"></Hero>
+
+
+        </>
     )
 }
 

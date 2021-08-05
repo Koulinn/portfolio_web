@@ -1,10 +1,14 @@
 import React from 'react'
+import Hero from '../hero/Hero'
 
-function About() {
+
+function About(props) {
     return (
-        <div>
-            
-        </div>
+        <>
+            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"I love"} heroTextSpan={"<br>"} heroTextSecond="journeys"></Hero>
+
+
+        </>
     )
 }
 
