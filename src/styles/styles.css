@@ -17,10 +17,17 @@ footer #footer nav ul li::before {
   transition: all 0.7s;
 }
 
-footer #footer nav ul li.active::before {
+footer #footer nav ul a.active:hover li::before, footer #footer nav ul a.active li::before, footer #footer nav ul a:hover li::before {
   transform: translateX(0px);
   opacity: 1;
   background-color: #45b2ed;
+}
+
+footer #footer nav ul a:hover li::before {
+  opacity: 1;
+  background-color: #18181a;
+  height: 2px;
+  width: 100%;
 }
 
 body {
@@ -230,6 +237,17 @@ footer #footer .logo-footer svg {
 }
 footer #footer #contact-section-text h2 {
   display: none;
+}
+footer #footer nav ul a {
+  text-decoration: none;
+  color: #18181a;
+}
+footer #footer nav ul a li {
+  display: inline;
+}
+footer #footer nav ul a.active:hover li::before {
+  width: 32px;
+  height: 4px;
 }
 footer #footer nav ul li {
   list-style: none;

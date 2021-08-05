@@ -32,10 +32,17 @@ $BGFooter: (
   transition: all 0.7s;
 }
 
-%menuEffectActive{
+%menuEffectActive {
   transform: translateX(0px);
-        opacity: 1;
-        background-color: $primary1;
+  opacity: 1;
+  background-color: $primary1;
+}
+
+%menuEffectHoverGrey {
+  opacity: 1;
+  background-color: #18181a;
+  height: 2px;
+  width: 100%;
 }
 
 body {
@@ -45,6 +52,10 @@ body {
 
 p {
   font-size: 18px;
+}
+
+a:hover {
+  // text-decoration: none;
 }
 
 #BG-NavBar {
@@ -286,6 +297,35 @@ footer {
       }
     }
     nav ul {
+      a {
+        text-decoration: none;
+        color: $dark;
+
+        li {
+          display: inline;
+        }
+      }
+
+      a:hover {
+        li::before {
+            @extend %menuEffectActive;
+            @extend %menuEffectHoverGrey;
+        }
+      }
+
+      a.active {
+        li::before {
+          @extend %menuEffectActive;
+        }
+      }
+      a.active:hover {
+        li::before {
+          @extend %menuEffectActive;
+          width: 32px;
+          height: 4px;
+        }
+      }
+
       li {
         list-style: none;
         text-align: center;
@@ -294,10 +334,6 @@ footer {
       }
       li::before {
         @extend %menuEffectInitial;
-      }
-
-      li.active::before {
-        @extend %menuEffectActive;
       }
     }
 
