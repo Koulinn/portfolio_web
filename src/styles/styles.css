@@ -191,7 +191,7 @@ body {
 
 footer {
   padding: 128px 0px;
-  background: linear-gradient(180deg, rgba(201, 225, 238, 0.5) 0%, rgba(201, 225, 238, 0.075) 100%, rgba(196, 196, 196, 0.6));
+  background: linear-gradient(180deg, rgba(146, 156, 161, 0.5) 0%, rgba(201, 225, 238, 0.075) 100%, rgba(196, 196, 196, 0.6));
 }
 footer #footer .logo-footer {
   margin-bottom: 64px;
