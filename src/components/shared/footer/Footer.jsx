@@ -8,6 +8,7 @@ import { ReactComponent as IxDFLogo } from '../../../assets/Icons/IxDF.svg'
 import { ReactComponent as ThinkOut } from '../../../assets/Imgs/thinkOutside.svg'
 
 
+
 function Footer() {
     return (
         <div id="footer" className="container">
