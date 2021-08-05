@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
 
 $primary: #001e55;
-$primaryBG: rgb(0 30 85 / 95%);
+$primaryBG: rgb(0 30 85 / 97%);
 $primary1: #45b2ed;
 $primary2: #093490;
 $dark: #18181a;
@@ -17,6 +17,7 @@ $BGFooter: (
 %menufont {
   font-size: 22px;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 %menuEffectInitial {
@@ -55,7 +56,7 @@ p {
 }
 
 a:hover {
-  // text-decoration: none;
+  text-decoration: none !important;
 }
 
 #BG-NavBar {
@@ -161,13 +162,47 @@ a:hover {
 .Nav-font-menu {
   @extend %Nav-Menu-Font;
 }
-.navbar-nav > a {
-  @extend %Nav-Menu-Font;
+.navbar-nav {
+  a {
+    @extend %Nav-Menu-Font;
+    position: relative;
+    text-decoration: none;
+    width: fit-content;
+  }
+  a::before{
+    @extend %menuEffectInitial;
+  }
+  a:hover::before{
+      @extend %menuEffectActive;
+      @extend %menuEffectHoverGrey;
+      background-color: #e2f0f8;
+  }
+
+  a.active{
+    font-weight: 500;
+  }
+  a.active::before{
+    @extend %menuEffectActive;
+  }
+  a.active:hover::before{
+    @extend %menuEffectActive;
+    width: 32px;
+    height: 4px;
+  }
+}
+
+.navbar-nav.fontDark{
+  a:hover::before{
+    @extend %menuEffectActive;
+    @extend %menuEffectHoverGrey;
+}
+
 }
 
 %Nav-Menu-Font {
   font-size: 1.25rem;
   color: $light !important;
+  letter-spacing: 1px;
 }
 
 .customCarouselDot {
@@ -308,14 +343,14 @@ footer {
 
       a:hover {
         li::before {
-            @extend %menuEffectActive;
-            @extend %menuEffectHoverGrey;
+          @extend %menuEffectActive;
+          @extend %menuEffectHoverGrey;
         }
       }
 
       a.active {
-        li{
-          font-weight: 600;
+        li {
+          font-weight: 500;
         }
         li::before {
           @extend %menuEffectActive;

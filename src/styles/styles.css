@@ -2,9 +2,10 @@
 footer #footer nav ul li {
   font-size: 22px;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
-footer #footer nav ul li::before {
+footer #footer nav ul li::before, .navbar-nav a::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -17,13 +18,13 @@ footer #footer nav ul li::before {
   transition: all 0.7s;
 }
 
-footer #footer nav ul a.active:hover li::before, footer #footer nav ul a.active li::before, footer #footer nav ul a:hover li::before {
+footer #footer nav ul a.active:hover li::before, footer #footer nav ul a.active li::before, footer #footer nav ul a:hover li::before, .navbar-nav.fontDark a:hover::before, .navbar-nav a.active:hover::before, .navbar-nav a.active::before, .navbar-nav a:hover::before {
   transform: translateX(0px);
   opacity: 1;
   background-color: #45b2ed;
 }
 
-footer #footer nav ul a:hover li::before {
+footer #footer nav ul a:hover li::before, .navbar-nav.fontDark a:hover::before, .navbar-nav a:hover::before {
   opacity: 1;
   background-color: #18181a;
   height: 2px;
@@ -37,6 +38,10 @@ body {
 
 p {
   font-size: 18px;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
 
 #BG-NavBar {
@@ -56,7 +61,7 @@ p {
 }
 
 .BG-NavBarColor {
-  background-color: rgba(0, 30, 85, 0.95);
+  background-color: rgba(0, 30, 85, 0.97);
   opacity: 0.95;
 }
 .BG-NavBarColor svg {
@@ -129,9 +134,26 @@ p {
   margin-right: 16px;
 }
 
-.Nav-font-menu, .navbar-nav > a {
+.navbar-nav a {
+  position: relative;
+  text-decoration: none;
+  width: fit-content;
+}
+.navbar-nav a:hover::before {
+  background-color: #e2f0f8;
+}
+.navbar-nav a.active {
+  font-weight: 500;
+}
+.navbar-nav a.active:hover::before {
+  width: 32px;
+  height: 4px;
+}
+
+.Nav-font-menu, .navbar-nav a {
   font-size: 1.25rem;
   color: #e2f0f8 !important;
+  letter-spacing: 1px;
 }
 
 .customCarouselDot {
@@ -246,7 +268,7 @@ footer #footer nav ul a li {
   display: inline;
 }
 footer #footer nav ul a.active li {
-  font-weight: 600;
+  font-weight: 500;
 }
 footer #footer nav ul a.active:hover li::before {
   width: 32px;

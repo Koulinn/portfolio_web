@@ -52,12 +52,12 @@ function NavBar({isMobile, isTabletOrMobile}) {
                         <MdShare className="font-Icon"></MdShare>
 
                     </div>
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className={isTabletOrMobile || (scrollY > 60) ? 'pl-3 text-center mx-auto' : "mx-auto fontDark"}>
+                    <Navbar.Collapse id="responsive-navbar-nav" className="mt-3 my-md-0">
+                        <Nav className={isTabletOrMobile || (scrollY > 60) ? 'pl-3 text-center align-items-center mx-auto' : "mx-auto fontDark"}>
                             <NavLink to="/" exact activeClassName="active">Home</NavLink>
-                            <NavLink to="/about" exact activeClassName="active" className="mx-3 my-3 my-md-0">About</NavLink>
+                            <NavLink to="/about" exact activeClassName="active" className="mx-0 mx-md-3 my-3 my-md-0">About</NavLink>
                             <NavLink to="/portfolio" exact activeClassName="active">Portfolio</NavLink>
-                            <NavLink to="/resume" exact activeClassName="active" className="mx-3 my-3 my-md-0">Resume</NavLink>
+                            <NavLink to="/resume" exact activeClassName="active" className="mx-0 mx-md-3 my-3 my-md-0">Resume</NavLink>
                             <Nav.Link href="#" className="p-0">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
