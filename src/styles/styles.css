@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
+footer #footer nav ul li {
+  font-size: 22px;
+  font-weight: 400;
+}
+
 body {
   font-family: "Heebo", sans-serif !important;
   color: #18181a;
@@ -19,6 +24,9 @@ p {
 #logo-NavBar svg {
   width: 64px;
   height: 64px;
+}
+#logo-NavBar span {
+  font-size: 16px;
 }
 
 .BG-NavBarColor {
@@ -72,10 +80,6 @@ p {
 #logo-Hero svg {
   height: 128px;
   width: 128px;
-}
-#logo-Hero .hero-TextLogo {
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .BG-MobileTablet-Menu {

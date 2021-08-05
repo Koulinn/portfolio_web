@@ -9,6 +9,11 @@ $BGGrad: (180deg, #c9e1ee 51.61%, #ecf5fa 100%);
 $light: #e2f0f8;
 $BGFooter: (180deg, rgb(146 156 161 / 50%) 0%, rgba(201, 225, 238, 0.075) 100%, rgba(196, 196, 196, 0.6));
 
+%menufont{
+  font-size: 22px;
+  font-weight: 400;
+}
+
 body {
   font-family: "Heebo", sans-serif !important;
   color: $dark;
@@ -30,6 +35,9 @@ p{
   svg {
     width: 64px;
     height: 64px;
+  }
+  span{
+    font-size: 16px;
   }
 }
 
@@ -91,10 +99,6 @@ p{
   svg {
     height: 128px;
     width: 128px;
-  }
-  .hero-TextLogo {
-    font-size: 20px;
-    font-weight: 400;
   }
 }
 
@@ -261,6 +265,7 @@ footer {
       li {
         list-style: none;
         text-align: center;
+        @extend %menufont;
       }
     }
 
