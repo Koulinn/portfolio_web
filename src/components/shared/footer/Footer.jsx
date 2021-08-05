@@ -19,13 +19,13 @@ function Footer() {
                     <ContactText footer={true}></ContactText>
 
                 </div>
-                <div className="col d-flex flex-column justify-content-between mt-5">
+                <div className="col d-flex flex-column justify-content-between mt-5 mt-md-0">
                     <nav>
                         <ul className="pl-0">
                             <li>About</li>
-                            <li>Portfolio</li>
+                            <li className="my-2">Portfolio</li>
                             <li>Resume</li>
-                            <li>Contact</li>
+                            <li className="mt-2">Contact</li>
                         </ul>
                     </nav>
 
