@@ -383,3 +383,21 @@ footer {
     }
   }
 }
+
+.sideFadeEffect{
+  overflow: hidden;
+  div{
+    transform: translateX(-100%);
+    transition: 1.5s;
+    opacity: 0;
+  }
+}
+
+.sideFadeEffectShow{
+  div{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+

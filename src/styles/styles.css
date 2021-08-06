@@ -284,4 +284,18 @@ footer #footer .thinkOut-footer svg {
   height: 144px;
 }
 
+.sideFadeEffect {
+  overflow: hidden;
+}
+.sideFadeEffect div {
+  transform: translateX(-100%);
+  transition: 1.5s;
+  opacity: 0;
+}
+
+.sideFadeEffectShow div {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 /*# sourceMappingURL=styles.css.map */
