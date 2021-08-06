@@ -12,8 +12,8 @@ function Stack(props) {
                 </div>
             </div>
             <div className="row">
-                <StackList title="Ux Design"></StackList>
-                <StackList title="Front-End"></StackList>
+                <StackList title="Ux Design" list={['Design thinking', 'Usability testing', 'User Research', 'Prototyping', 'Persona', 'User Flow', 'User Journey', 'Site Map']}></StackList>
+                <StackList title="Front-End" list={['Git Hub', 'JavaScript', 'REACT', 'HTML', 'MySQL']}></StackList>
             </div>
             
         </section>
