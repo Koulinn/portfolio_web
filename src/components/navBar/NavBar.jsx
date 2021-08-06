@@ -43,22 +43,13 @@ function NavBar({isMobile, isTabletOrMobile}) {
 
                         </div>
                     </div>
-                    <div className={
-                        isMobile ? 'mr-3 shareBtn cursorPointer' :
-                            isTabletOrMobile ? 'shareBtn cursorPointer' :
-                                'd-md-none'
-                    }
-                    >
-                        <MdShare className="font-Icon"></MdShare>
-
-                    </div>
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className={isTabletOrMobile || (scrollY > 60) ? 'pl-3 text-center mx-auto' : "mx-auto fontDark"}>
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#about">About</Nav.Link>
-                            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-                            <Nav.Link href="#resume">Resume</Nav.Link>
-                            <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Navbar.Collapse id="responsive-navbar-nav" className="mt-3 my-md-0">
+                        <Nav className={isTabletOrMobile || (scrollY > 60) ? 'pl-3 text-center align-items-center mx-auto' : "mx-auto fontDark"}>
+                            <NavLink to="/" exact activeClassName="active">Home</NavLink>
+                            <NavLink to="/about" exact activeClassName="active" className="mx-0 mx-md-3 my-3 my-md-0">About</NavLink>
+                            <NavLink to="/portfolio" exact activeClassName="active">Portfolio</NavLink>
+                            <NavLink to="/resume" exact activeClassName="active" className="mx-0 mx-md-3 my-3 my-md-0">Resume</NavLink>
+                            {/* <Nav.Link href="#" className="p-0">Contact</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
