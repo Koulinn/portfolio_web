@@ -3,6 +3,7 @@ import Hero from '../hero/Hero'
 import { Container } from 'react-bootstrap'
 import BGTop from '../shared/BGTop'
 import CommonSection from '../shared/CommonSection'
+import Stack from './Stack'
 
 
 function About(props) {
@@ -14,6 +15,7 @@ function About(props) {
                 <Container>
                     <CommonSection order="0" spanText="<br>"></CommonSection>
                     <CommonSection order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>"></CommonSection>
+                    <Stack spanText="<br>"></Stack>
 
                 </Container>
             </Container>
