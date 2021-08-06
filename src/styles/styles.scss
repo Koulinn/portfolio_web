@@ -400,4 +400,26 @@ footer {
   }
 }
 
+.sectionImgsLeft{
+  div{
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: 1.5s;
+  }
+}
+
+.sectionImgsRight{
+  div{
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 1.5s;
+  }
+}
+
+.sectionImgsShow{
+  div{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 
