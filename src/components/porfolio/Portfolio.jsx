@@ -14,8 +14,8 @@ function Portfolio(props) {
             <Container className="p-0 position-relative" fluid>
                 <BGTop></BGTop>
                 <Container>
-                    <CommonSection YIni={120} YEnd={570} order="0" spanText="<br>"></CommonSection>
-                    <CommonSection order={props.isTabletOrMobile ? "0" : "2"} YIni={500} YEnd={1100} spanText="<br>"></CommonSection>
+                    <CommonSection order="0" spanText="<br>"></CommonSection>
+                    <CommonSection order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>"></CommonSection>
 
 
                 </Container>
