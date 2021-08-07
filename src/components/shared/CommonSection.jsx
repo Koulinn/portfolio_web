@@ -1,6 +1,7 @@
 import React from 'react'
 import StackedCarrousel from './Carousel/StackedCarrousel'
 import { useScrollYPosition } from 'react-use-scroll-position';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 
@@ -10,6 +11,7 @@ function CommonSection(props) {
         <section className="section-Margin">
             <div className="row">
                 <div className="col-12 col-md-6 commonSection-Text" style={{ order: props.order }}>
+
                     <h2>
                         Section Title <span className="spanText">{props.spanText}</span>
                     </h2>
@@ -17,16 +19,16 @@ function CommonSection(props) {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci quia a ipsa quid {console.log(scrollY)}
                     </p>
 
-                </div>
-
-                <div className={(scrollY > props.YIni) && (scrollY < props.YEnd) && (props.order === '2') ? "col-12 col-md-6 sectionImgsLeft sectionImgsShow" :
-                    (scrollY > props.YIni) && (scrollY < props.YEnd) && (props.order === '0') ? "col-12 col-md-6 sectionImgsRight sectionImgsShow" :
-                    props.order === '0' ? " col-12 col-md-6 sectionImgsRight" :
-                        " col-12 col-md-6 sectionImgsLeft"}>
-                    <StackedCarrousel></StackedCarrousel>
 
                 </div>
 
+
+                <div className="col-12 col-md-6">
+                    <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight' }>
+                        <StackedCarrousel></StackedCarrousel>
+                    </ScrollAnimation>
+
+                </div>
             </div>
 
         </section>
