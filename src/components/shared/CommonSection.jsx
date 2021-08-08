@@ -22,7 +22,7 @@ function CommonSection(props) {
 
 
                 
-                    <div className="col-12 col-md-6 fadeEffectTest">
+                    <div className="col-12 col-md-6">
                                               
                         <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight' } offset={200} > 
                             <StackedCarrousel></StackedCarrousel>
