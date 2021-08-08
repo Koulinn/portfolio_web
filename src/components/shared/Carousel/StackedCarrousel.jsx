@@ -22,7 +22,7 @@ function StackedCarrousel(props) {
         }
     };
     return (
-        <div>
+        <>
             <Carousel
                 swipeable={true}
                 minimumTouchDrag={80}
@@ -35,8 +35,8 @@ function StackedCarrousel(props) {
                 customTransition="all .7s linear"
                 transitionDuration={700}
                 containerClass="carousel-container"
-                removeArrowOnDeviceType={["mobile"]}
-                deviceType={props.deviceType}
+                removeArrowOnDeviceType={"mobile"}
+                deviceType={"mobile"}
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
                 customDot={<CustomCarouselDot/>}
@@ -49,7 +49,7 @@ function StackedCarrousel(props) {
                 
             </Carousel>
 
-        </div>
+        </>
     )
 }
 

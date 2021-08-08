@@ -52,7 +52,7 @@ function NavBar({isMobile, isTabletOrMobile, location}) {
                         </div>
                     </div>
                     <Navbar.Collapse id="responsive-navbar-nav" className="mt-3 my-md-0">
-                        <Nav className={isTabletOrMobile || (scrollY > 60) ? 'pl-3 text-center align-items-center mx-auto' : "mx-auto fontDark"}>
+                        <Nav className={isTabletOrMobile || (scrollY > 60) ? 'text-center align-items-center mx-auto' : "mx-auto fontDark"}>
                             <NavLink to="/" exact activeClassName="active" onClick={scrollToTop}>Home</NavLink>
                             <NavLink to="/about" exact activeClassName="active" className="mx-0 mx-md-3 my-3 my-md-0" onClick={scrollToTop}>About</NavLink>
                             <NavLink to="/portfolio" exact activeClassName="active" onClick={scrollToTop}>Portfolio</NavLink>
