@@ -8,6 +8,8 @@ import NavBar from '../navBar/NavBar'
 import Footer from './footer/Footer'
 import Contact from './Contact/Contact'
 
+
+
 function Pages(props) {
     return (
         <>
