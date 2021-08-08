@@ -383,3 +383,43 @@ footer {
     }
   }
 }
+
+.sideFadeEffect{
+  overflow: hidden;
+  div{
+    transform: translateX(-100%);
+    transition: 1.5s;
+    opacity: 0;
+  }
+}
+
+.sideFadeEffectShow{
+  div{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sectionImgsLeft{
+  div{
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: 1.5s;
+  }
+}
+
+.sectionImgsRight{
+  div{
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 1.5s;
+  }
+}
+
+.sectionImgsShow{
+  div{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+

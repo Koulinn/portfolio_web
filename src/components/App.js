@@ -2,6 +2,7 @@ import { Container } from 'react-bootstrap'
 import '../styles/styles.css'
 import { useMediaQuery } from 'react-responsive'
 import Pages from './shared/Pages'
+import "animate.css/animate.min.css";
 
 
 function App() {
