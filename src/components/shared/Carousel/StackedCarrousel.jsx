@@ -24,16 +24,16 @@ function StackedCarrousel(props) {
     return (
         <div>
             <Carousel
-                swipeable={false}
+                swipeable={true}
+                minimumTouchDrag={80}
                 draggable={false}
                 showDots={true}
                 responsive={responsive}
-                ssr={true} // means to render carousel on server-side.
                 infinite={true}
                 autoPlay={false}
                 keyBoardControl={true}
-                customTransition="all .5"
-                transitionDuration={500}
+                customTransition="all .7s linear"
+                transitionDuration={700}
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["mobile"]}
                 deviceType={props.deviceType}
