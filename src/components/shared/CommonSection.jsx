@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function CommonSection(props) {
     return (
         <section className="section-Margin">
-            <div className="row overflow-hidden">
+            <div className="row">
                 <div className="col-12 col-md-6 commonSection-Text" style={{ order: props.order }}>
 
                     <h2>
