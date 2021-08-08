@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 
 
 
-function NavBar({isMobile, isTabletOrMobile}) {
+function NavBar({isMobile, isTabletOrMobile, location}) {
     const scrollY = useScrollYPosition();
 
 
@@ -39,7 +39,7 @@ function NavBar({isMobile, isTabletOrMobile}) {
 
                         </Navbar.Brand>
                         <div className="d-flex py-0 d-md-none">
-                            <span className="pt-1">Home</span>
+                            <span className="pt-1">{location.pathname === "/" ? '/Home' :  '/' + location.pathname[1].toUpperCase() + location.pathname.slice(2)}</span>
 
                         </div>
                     </div>
