@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function CommonSection(props) {
     return (
         <section className="section-Margin">
-            <div className="row">
+            <div className="row overflow-hidden">
                 <div className="col-12 col-md-6 commonSection-Text" style={{ order: props.order }}>
 
                     <h2>
@@ -21,12 +21,15 @@ function CommonSection(props) {
                 </div>
 
 
-                <div className="col-12 col-md-6">
-                    <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight' } offset={200} >
-                        <StackedCarrousel></StackedCarrousel>
-                    </ScrollAnimation>
-
-                </div>
+                
+                    <div className="col-12 col-md-6 fadeEffectTest">
+                                              
+                        <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight' } offset={200} > 
+                            <StackedCarrousel></StackedCarrousel>
+                         </ScrollAnimation>
+    
+                    </div>
+               
             </div>
 
         </section>

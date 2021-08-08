@@ -14,7 +14,6 @@ function Home(props) {
                 <Container>
                     <CommonSection order="0" spanText="<br>"></CommonSection>
                     <CommonSection order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>"></CommonSection>
-
                 </Container>
             </Container>
 
