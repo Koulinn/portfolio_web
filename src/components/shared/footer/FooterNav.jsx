@@ -4,7 +4,11 @@ import { NavLink } from 'react-router-dom'
 
 function FooterNav() {
     const scrollToTop = () => {
-        window.scrollTo(0, 0)
+        window.scrollTo({
+            top: 100,
+            left: 100,
+            behavior: 'smooth'
+          })
     }
     return (
         <nav>

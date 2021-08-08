@@ -14,7 +14,11 @@ function NavBar({isMobile, isTabletOrMobile, location}) {
     const scrollY = useScrollYPosition();
 
     const scrollToTop = () => {
-        window.scrollTo(0, 0)
+        window.scrollTo({
+            top: 100,
+            left: 100,
+            behavior: 'smooth'
+          })
     }
 
 
