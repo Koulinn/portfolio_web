@@ -3,6 +3,7 @@ import Hero from '../hero/Hero'
 import { Container } from 'react-bootstrap'
 import BGTop from '../shared/BGTop'
 import CommonSection from '../shared/CommonSection'
+import TimeLine from './timeLine/TimeLine'
 
 
 
@@ -14,6 +15,7 @@ function Resume(props) {
                 <BGTop></BGTop>
                 <Container>
                     <CommonSection order="0" spanText="<br>"></CommonSection>
+                    <TimeLine/>
                     <CommonSection order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>"></CommonSection>
 
 
