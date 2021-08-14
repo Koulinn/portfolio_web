@@ -2,8 +2,14 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CustomCarouselDot from './CustomCarouselDot';
+import { useMediaQuery } from 'react-responsive'
+import {isDesktop} from './utils.js'
+
+
 
 function StackedCarrousel(props) {
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 767px)' })
+
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -35,8 +41,8 @@ function StackedCarrousel(props) {
                 customTransition="all .7s linear"
                 transitionDuration={700}
                 containerClass="carousel-container"
-                removeArrowOnDeviceType={"mobile"}
-                deviceType={"mobile"}
+                removeArrowOnDeviceType={"mobileOrTablet"}
+                deviceType={isDesktop(!isTabletOrMobile)}
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
                 customDot={<CustomCarouselDot/>}
