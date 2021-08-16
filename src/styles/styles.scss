@@ -2,7 +2,7 @@
 
 $primary: #001e55;
 $primaryBG: rgb(0 30 85 / 97%);
-$primary1: #45b2ed;
+$primary1: #2196f3;
 $primary2: #093490;
 $dark: #18181a;
 $BGGrad: (180deg, #c9e1ee 51.61%, #ecf5fa 100%);
@@ -384,42 +384,51 @@ footer {
   }
 }
 
-.sideFadeEffect{
+.sideFadeEffect {
   overflow: hidden;
-  div{
+  div {
     transform: translateX(-100%);
     transition: 1.5s;
     opacity: 0;
   }
 }
 
-.sideFadeEffectShow{
-  div{
+.sideFadeEffectShow {
+  div {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-.sectionImgsLeft{
-  div{
+.sectionImgsLeft {
+  div {
     transform: translateX(-200%);
     opacity: 0;
     transition: 1.5s;
   }
 }
 
-.sectionImgsRight{
-  div{
+.sectionImgsRight {
+  div {
     transform: translateX(200%);
     opacity: 0;
     transition: 1.5s;
   }
 }
 
-.sectionImgsShow{
-  div{
+.sectionImgsShow {
+  div {
     transform: translateX(0px);
     opacity: 1;
   }
 }
 
+.vertical-timeline-element--custom {
+      path {
+        stroke: white;
+      }
+}
+
+.vertical-timeline-element-icon{
+  stroke: white;
+}
