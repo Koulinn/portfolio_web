@@ -1,7 +1,7 @@
 import React from 'react'
 import StackedCarrousel from './Carousel/StackedCarrousel'
 import ScrollAnimation from 'react-animate-on-scroll';
-import { withRouter, Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 
 function CommonSection(props) {
@@ -35,6 +35,14 @@ function CommonSection(props) {
                     </ScrollAnimation>
 
                 </div>
+                {props.subsection ?
+                    <div className="mx-auto">
+                        <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight'} offset={200} >
+                            {props.subsection}
+                        </ScrollAnimation>
+                    </div>
+
+                    : ''}
 
             </div>
 

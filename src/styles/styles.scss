@@ -450,3 +450,13 @@ footer {
   }
 
 }
+
+.list-subsection{
+  div{
+    transition: all .5s;
+  }
+  div:hover{
+    background-color: #c9e1ee;
+    text-decoration: underline !important;
+  }
+}

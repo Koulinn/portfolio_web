@@ -337,4 +337,12 @@ footer #footer .thinkOut-footer svg {
   text-decoration: underline !important;
 }
 
+.list-subsection div {
+  transition: all 0.5s;
+}
+.list-subsection div:hover {
+  background-color: #c9e1ee;
+  text-decoration: underline !important;
+}
+
 /*# sourceMappingURL=styles.css.map */
