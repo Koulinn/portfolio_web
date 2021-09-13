@@ -21,7 +21,7 @@ footer #footer nav ul li::before, .navbar-nav a::before {
 footer #footer nav ul a.active:hover li::before, footer #footer nav ul a.active li::before, footer #footer nav ul a:hover li::before, .navbar-nav.fontDark a:hover::before, .navbar-nav a.active:hover::before, .navbar-nav a.active::before, .navbar-nav a:hover::before {
   transform: translateX(0px);
   opacity: 1;
-  background-color: #45b2ed;
+  background-color: #2196f3;
 }
 
 footer #footer nav ul a:hover li::before, .navbar-nav.fontDark a:hover::before, .navbar-nav a:hover::before {
@@ -142,7 +142,7 @@ a:hover {
 }
 
 .navbar-nav.fontDark a.active:hover::before {
-  background-color: #45b2ed;
+  background-color: #2196f3;
 }
 
 .Nav-font-menu, .navbar-nav a {
@@ -160,7 +160,7 @@ a:hover {
 }
 
 .customCarouselDot--active {
-  background: #45b2ed;
+  background: #2196f3;
 }
 
 .react-multi-carousel-dot-list {
@@ -168,7 +168,7 @@ a:hover {
 }
 
 .section-Margin {
-  margin-bottom: 128px !important;
+  margin-bottom: 128px;
 }
 
 .carousel-image {
@@ -208,7 +208,7 @@ a:hover {
   }
 
   .section-Margin {
-    margin-bottom: 256px !important;
+    margin-bottom: 256px;
   }
 
   footer #footer .logo-footer svg {
@@ -313,6 +313,28 @@ footer #footer .thinkOut-footer svg {
 .sectionImgsShow div {
   transform: translateX(0px);
   opacity: 1;
+}
+
+.vertical-timeline-element--custom path {
+  stroke: white;
+}
+
+.vertical-timeline-element-icon {
+  stroke: white;
+}
+
+.commonSection-image-wrapper img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.commonSection-image-wrapper .card-link {
+  text-decoration: none;
+  margin-top: 16px;
+  text-align: center;
+  display: block;
+}
+.commonSection-image-wrapper .card-link:hover {
+  text-decoration: underline !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,7 @@
 import React from 'react'
 import StackedCarrousel from './Carousel/StackedCarrousel'
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import { withRouter, Link } from 'react-router-dom'
 
 
 function CommonSection(props) {
@@ -11,29 +11,35 @@ function CommonSection(props) {
                 <div className="col-12 col-md-6 commonSection-Text" style={{ order: props.order }}>
 
                     <h2>
-                        Section Title <span className="spanText">{props.spanText}</span>
+                        {props.title ? props.title : 'Section Title'} <span className="spanText">{props.spanText}</span>
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci quia a ipsa quid
+                        {props.text ? props.text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci quia a ipsa quid'}
                     </p>
 
 
                 </div>
 
 
-                
-                    <div className="col-12 col-md-6">
-                                              
-                        <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight' } offset={200} > 
-                            <StackedCarrousel></StackedCarrousel>
-                         </ScrollAnimation>
-    
-                    </div>
-               
+
+                <div className="commonSection-image-wrapper col-12 col-md-6">
+
+                    <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight'} offset={200} >
+                        <>
+                            {props.isCarousel ? <StackedCarrousel></StackedCarrousel> :
+                                props.linkUrl ? <a href={props.linkUrl}><img className="ImgShadowEffect" src={props.imgURL} alt='' /></a> :
+                                    <img className="ImgShadowEffect" src={props.imgURL} alt='' />
+                            }
+                            {props.linkUrl ? <a className="card-link" href={props.linkUrl}>{props.linkText}</a> : ''}
+                        </>
+                    </ScrollAnimation>
+
+                </div>
+
             </div>
 
         </section>
     )
 }
 
-export default CommonSection
+export default withRouter(CommonSection)
