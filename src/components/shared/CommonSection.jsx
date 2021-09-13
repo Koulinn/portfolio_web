@@ -26,7 +26,7 @@ function CommonSection(props) {
 
                     <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight'} offset={200} >
                         <>
-                            {props.isCarousel ? <StackedCarrousel></StackedCarrousel> :
+                            {props.isCarousel ? <StackedCarrousel carouselItems={props.carouselItems}></StackedCarrousel> :
                                 props.linkUrl ? <a href={props.linkUrl}><img className="ImgShadowEffect" src={props.imgURL} alt='' /></a> :
                                     <img className="ImgShadowEffect" src={props.imgURL} alt='' />
                             }

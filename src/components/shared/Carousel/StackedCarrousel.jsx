@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CustomCarouselDot from './CustomCarouselDot';
 import { useMediaQuery } from 'react-responsive'
-import {isDesktop} from './utils.js'
+import { isDesktop } from './utils.js'
 
 
 
@@ -45,15 +45,24 @@ function StackedCarrousel(props) {
                 deviceType={isDesktop(!isTabletOrMobile)}
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
-                customDot={<CustomCarouselDot/>}
+                customDot={<CustomCarouselDot />}
                 renderDotsOutside={true}
             >
-                <div><img className="carousel-image" src="http://placekitten.com/200/300" alt="" /></div>
-                <div><img className="carousel-image" src="https://baconmockup.com/200/300" alt="" /></div>
-                <div><img className="carousel-image" src="https://www.placecage.com/g/200/300" alt="" /></div>
-                <div><img className="carousel-image" src="http://lorempixel.com/200/300/sports/" alt="" /></div>
-                
+
+                {props.carouselItems.map((item, i) =>
+
+                    <>
+                        <div className='d-flex flex-column mt-3 justify-content-center align-content-center'>
+                            <a href={item.link}><img className="carousel-image" height='256px' src={item.image} alt="" /></a>
+                            <a href={item.link}><h4>{item.title}</h4></a>
+                            <h6>{item.info}</h6>
+                        </div>
+                    </>
+                )}
+
+
             </Carousel>
+
 
         </>
     )
