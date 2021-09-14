@@ -16,7 +16,7 @@ function Portfolio(props) {
         },
         {
             title: 'Elevato',
-            link: 'https://www.figma.com/proto/IxlFpW2edfQpur25OZhAG6/Competenza?page-id=0%3A1&node-id=506%3A413&viewport=431%2C48%2C0.03&scaling=min-zoom&starting-point-node-id=506%3A413&show-proto-sidebar=1'
+            link: 'https://www.figma.com/proto/vzB6n96qg4ePZK0BEzZYw8/Board-geral?page-id=0%3A1&node-id=497%3A13528&viewport=431%2C48%2C0.04&scaling=scale-down&starting-point-node-id=497%3A13528&show-proto-sidebar=1'
         },
         {
             title: 'Claris',
