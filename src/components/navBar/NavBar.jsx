@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { ReactComponent as Logo } from '../../assets/logo/Logo.svg'
 import { ReactComponent as WhiteLogo } from '../../assets/logo/whiteLogo.svg'
+
 import { MdMenu } from "react-icons/md";
 import { useScrollYPosition } from 'react-use-scroll-position';
 import { withRouter } from "react-router"
@@ -13,7 +14,7 @@ import NavMenuDesktop from './NavMenuDesktop';
 
 
 
-function NavBar({ isMobile, isTabletOrMobile, location }) {
+function NavBar({ isMobile, isTabletOrMobile, location, history }) {
     const scrollY = useScrollYPosition();
 
     const scrollToTop = () => {
@@ -34,7 +35,10 @@ function NavBar({ isMobile, isTabletOrMobile, location }) {
                 <Container className="p-0">
                     <div className={isTabletOrMobile ? 'd-flex align-items-baseline' : ''}>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" className={isMobile ? 'border-0 pl-3' : "border-0"}> <MdMenu className="font-Icon"></MdMenu></Navbar.Toggle>
-                        <Navbar.Brand href="/" className="pl-3">
+                        <Navbar.Brand to="/" className="pl-3" style={{cursor:'pointer'}} onClick={()=>{
+                            history.push('/')
+                            scrollToTop()
+                            }}>
                             <div id="logo-NavBar" className="d-none d-md-flex flex-column justify-content-center align-items-center">
                                 {scrollY > 60 ? <WhiteLogo /> : <Logo />}
 
