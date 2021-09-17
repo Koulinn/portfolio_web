@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import UnitedImg from '../../../assets/Imgs/united.png'
 import ContactText from './ContactText'
 import BGTop from '../BGTop'
 
 
 function Contact(props) {
+    const UnitedImg = 'https://res.cloudinary.com/koulin/image/upload/v1631899930/Portfolio/contact_us_ugwbg3.jpg'
     return (
         <Container id="contact-section" className="px-0 position-relative" fluid>
             <BGTop invert={true}></BGTop>
