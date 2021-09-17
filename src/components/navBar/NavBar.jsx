@@ -34,7 +34,7 @@ function NavBar({ isMobile, isTabletOrMobile, location }) {
                 <Container className="p-0">
                     <div className={isTabletOrMobile ? 'd-flex align-items-baseline' : ''}>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" className={isMobile ? 'border-0 pl-3' : "border-0"}> <MdMenu className="font-Icon"></MdMenu></Navbar.Toggle>
-                        <Navbar.Brand href="#home" className="pl-3">
+                        <Navbar.Brand href="/" className="pl-3">
                             <div id="logo-NavBar" className="d-none d-md-flex flex-column justify-content-center align-items-center">
                                 {scrollY > 60 ? <WhiteLogo /> : <Logo />}
 
