@@ -436,7 +436,8 @@ footer {
 
 .commonSection-image-wrapper {
   img{
-    max-width: 100%;
+    width: 100%;
+    max-height: 256px;
     object-fit: cover;
   }
   .card-link {

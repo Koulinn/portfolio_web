@@ -324,7 +324,8 @@ footer #footer .thinkOut-footer svg {
 }
 
 .commonSection-image-wrapper img {
-  max-width: 100%;
+  width: 100%;
+  max-height: 256px;
   object-fit: cover;
 }
 .commonSection-image-wrapper .card-link {
