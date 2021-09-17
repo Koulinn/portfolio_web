@@ -9,6 +9,8 @@ import { isDesktop } from './utils.js'
 
 function StackedCarrousel(props) {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 767px)' })
+    const isDesktopSmall = useMediaQuery({ query: '(max-width: 976px)' })
+    const isDesktopGigantic = useMediaQuery({ query: '(max-width: 1178px)' })
 
     const responsive = {
         desktop: {
@@ -40,7 +42,7 @@ function StackedCarrousel(props) {
                 keyBoardControl={true}
                 customTransition="all .7s linear"
                 transitionDuration={700}
-                containerClass="carousel-container"
+                containerClass={"carousel-container " + (isDesktopSmall ? 'arrowDesktopSmall' : isDesktopGigantic ? 'arrowDesktop': 'arrowDesktopGigantic')}
                 removeArrowOnDeviceType={"mobileOrTablet"}
                 deviceType={isDesktop(!isTabletOrMobile)}
                 dotListClass="custom-dot-list-style"
@@ -52,9 +54,9 @@ function StackedCarrousel(props) {
                 {props.carouselItems.map((item, i) =>
 
                     <>
-                        <div className='d-flex flex-column mt-3 justify-content-center align-content-center'>
+                        <div className={'d-flex flex-column mt-3 justify-content-center align-content-center'}>
                             <a href={item.link}><img className="carousel-image" height='256px' src={item.image} alt="" /></a>
-                            <a href={item.link}><h4>{item.title}</h4></a>
+                            <a href={item.link} className="mt-3 mb-1"><h4>{item.title}</h4></a>
                             <h6>{item.info}</h6>
                         </div>
                     </>

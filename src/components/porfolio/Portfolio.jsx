@@ -37,11 +37,6 @@ function Portfolio(props) {
             title: 'Clone Spotify',
             info: 'Click on home to start'
         },
-        // {
-        //     link: '',
-        //     image: 'https://res.cloudinary.com/koulin/image/upload/v1631558027/Portfolio/gsmarena_001_txz2lz.jpg',
-        //     title: 'Clone Netflix'
-        // },
         {
             link: '',
             image: 'https://res.cloudinary.com/koulin/image/upload/v1631558066/Portfolio/desarrollo-web-marketplace_hnzakj.jpg',

@@ -345,4 +345,16 @@ footer #footer .thinkOut-footer svg {
   text-decoration: underline !important;
 }
 
+.arrowDesktop button {
+  top: calc(25% + 22px);
+}
+
+.arrowDesktopSmall button {
+  top: calc(19% + 22px);
+}
+
+.arrowDesktopGigantic button {
+  top: calc(28% + 22px);
+}
+
 /*# sourceMappingURL=styles.css.map */
