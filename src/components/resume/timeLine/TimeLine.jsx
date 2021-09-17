@@ -7,7 +7,7 @@ import TimeLineElement from './TimeLineElement.jsx';
 
 function TimeLine() {
     return (
-        <VerticalTimeline className="section-Margin">
+        <VerticalTimeline className="section-Margin mb-5">
             {TimeData.map(experience => <TimeLineElement {...experience}/>)}
             <VerticalTimelineElement
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
