@@ -15,14 +15,12 @@ function ContactText(props) {
                     </div>
                     <div className="ml-3 cursorPointer telegram-icon">
                         <Telegram onClick={()=> window.location.replace('https://t.me/koulinn')} />
-                        {/* https://t.me/USERNAME */}
                     </div>
                 </div>
             </div>
             <div className="d-flex align-items-center mb-3">
                 <p>drdverzola@gmail.com</p>
                 <div className="ml-3 cursorPointer">
-                    {/* "mailto:user@example.com?subject=Subject&body=message%20goes%20here" */}
                     <AiOutlineMail onClick={()=> window.location.replace("mailto:drdverzola@gmail.com")} />
                 </div>
 
