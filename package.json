@@ -25,6 +25,7 @@
     "react-use-scroll-position": "^2.0.0",
     "react-vertical-timeline-component": "^3.3.3",
     "readable-stream": "^3.6.0",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

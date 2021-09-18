@@ -9,7 +9,7 @@ import Stack from './Stack'
 function About(props) {
     return (
         <>
-            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"I'm quite a curious"} heroTextSpan={"<br>"} heroTextSecond="person"></Hero>
+            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"I'm quite..."} heroTextSpan={"<br>"} heroTextSecond="curious"></Hero>
             <Container className="p-0 position-relative" fluid>
                 <BGTop></BGTop>
                 <Container>

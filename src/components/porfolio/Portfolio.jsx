@@ -45,7 +45,7 @@ function Portfolio(props) {
     ]
     return (
         <>
-            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"Take a peek"} heroTextSpan={"<br>"} heroTextSecond="from what I have done"></Hero>
+            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"Take a peek"} heroTextSpan={"<br>"} heroTextSecond="of things I have done"></Hero>
             <Container className="p-0 position-relative" fluid>
                 <BGTop></BGTop>
                 <Container>
