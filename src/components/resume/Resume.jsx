@@ -10,7 +10,7 @@ import TimeLine from './timeLine/TimeLine'
 function Resume(props) {
     return (
         <>
-            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"I already have been"} heroTextSpan={"<br>"} heroTextSecond="to many places"></Hero>
+            <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"I already did"} heroTextSpan={"<br>"} heroTextSecond="many things"></Hero>
             <Container className="p-0 position-relative" fluid>
                 <BGTop></BGTop>
                 <Container>
