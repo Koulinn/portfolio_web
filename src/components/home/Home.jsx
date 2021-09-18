@@ -19,7 +19,12 @@ function Home(props) {
                         spanText="<br>">
 
                     </CommonSection>
-                    {/* <CommonSection order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>"></CommonSection> */}
+                    <CommonSection
+                        title={'Home is still under development'}
+                        text={'this page is under development'}
+                        order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>">
+
+                    </CommonSection>
                 </Container>
             </Container>
 
