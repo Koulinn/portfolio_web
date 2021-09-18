@@ -11,10 +11,11 @@ function ContactText(props) {
                 <p>+44 07985199302</p>
                 <div className="d-flex icons-WT">
                     <div className="ml-3 cursorPointer">
-                        <Whatssap />
+                        <Whatssap onClick={()=> window.location.replace('https://wa.me/4407985199302?text=Hello Rafa! I would like to talk with you about an opportunity.')} />
                     </div>
                     <div className="ml-3 cursorPointer telegram-icon">
-                        <Telegram />
+                        <Telegram onClick={()=> window.location.replace('https://t.me/koulinn')} />
+                        {/* https://t.me/USERNAME */}
                     </div>
                 </div>
             </div>
