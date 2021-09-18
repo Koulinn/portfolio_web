@@ -21,8 +21,9 @@ function Resume(props) {
                         text={'A well rounded Web UX desinerloper with great leadership skills, creativity and always read to play in any team! '}
                         order="0"
                         spanText="<br>"
-                        linkUrl='https://www.figma.com/file/o22eUJF3N1mkTbP2JNLhZt/Rafa-Lima->-Portfolio?node-id=0%3A1'
+                        linkUrl='https://1drv.ms/b/s!AnfHEZPn_w1DrOUnQ4VGDNQMHnYPpA'
                         linkText={`Download Rafa Lima CV`}
+                        download={true}
 
                     ></CommonSection>
                     <TimeLine />

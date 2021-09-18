@@ -30,7 +30,8 @@ function CommonSection(props) {
                                 props.linkUrl ? <a href={props.linkUrl}><img className="ImgShadowEffect" src={props.imgURL} alt='' /></a> :
                                     <img className="ImgShadowEffect" src={props.imgURL} alt='' />
                             }
-                            {props.linkUrl ? <a className="card-link" href={props.linkUrl}>{props.linkText}</a> : ''}
+                            {props.linkUrl ? <a className="card-link" href={props.linkUrl} download={props.download}>{props.linkText}</a> : ''}
+
                         </>
                     </ScrollAnimation>
 

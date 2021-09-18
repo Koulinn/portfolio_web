@@ -12,8 +12,14 @@ function Home(props) {
             <Container className="p-0 position-relative" fluid>
                 <BGTop></BGTop>
                 <Container>
-                    <CommonSection order="0" spanText="<br>"></CommonSection>
-                    <CommonSection order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>"></CommonSection>
+                    <CommonSection
+                        title={'Home is still under development'}
+                        text={'this page is under development'}
+                        order="0"
+                        spanText="<br>">
+
+                    </CommonSection>
+                    {/* <CommonSection order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>"></CommonSection> */}
                 </Container>
             </Container>
 
