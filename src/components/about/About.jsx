@@ -7,6 +7,24 @@ import Stack from './Stack'
 
 
 function About(props) {
+    const items = [
+        {
+            title: `That's me trying to learn kite-surf, one of the best things that I did`,
+            image: 'https://res.cloudinary.com/koulin/image/upload/v1632149831/Portfolio/WhatsApp_Image_2021-09-20_at_15.50.41_wjrspg.jpg'
+        },
+        {
+            title: 'Practicing kung-fu with some friends',
+            image: 'https://res.cloudinary.com/koulin/image/upload/v1632149831/Portfolio/WhatsApp_Image_2021-09-20_at_15.52.07_cm0szs.jpg'
+        },
+        {
+            title: 'I love Phillip Pullman books',
+            image: 'https://res.cloudinary.com/koulin/image/upload/v1632149831/Portfolio/HDM_cunz1u.jpg'
+        },
+        {
+            title: 'I went into a kung-fu school in China for 3 weeks',
+            image: 'https://res.cloudinary.com/koulin/image/upload/v1632149831/Portfolio/WhatsApp_Image_2021-09-20_at_15.49.56_exfkb8.jpg'
+        }
+    ]
     return (
         <>
             <Hero isTabletOrMobile={props.isTabletOrMobile} isMobile={props.isMobile} heroTextFirst={"Curiosity"} heroTextSpan={"<br>"} heroTextSecond="drives me"></Hero>
@@ -17,7 +35,10 @@ function About(props) {
                         title={`I'm always learning something new`}
                         text={'I love changing environments where we need to be always researching and adapting to achieve the best results and deliver an outstanding project'}
                         order="0"
-                        spanText="<br>">
+                        spanText="<br>"
+                        imgURL={'https://res.cloudinary.com/koulin/image/upload/v1632149266/Portfolio/mika-baumeister-Y_LgXwQEx2c-unsplash_1_lbbyvo.jpg'}
+                        isCarousel={false}
+                        >
 
                     </CommonSection>
                     <CommonSection
@@ -25,7 +46,8 @@ function About(props) {
                         spanText="<br>"
                         title={`Discover the unknown`}
                         text={`I'm always changing my habits but I found martial arts a place to keep balance between modern life and nature`}
-
+                        isCarousel={true}
+                        carouselItems={items}
 
                     >
 
