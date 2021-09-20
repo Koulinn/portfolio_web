@@ -5,6 +5,14 @@ import { Link, withRouter } from 'react-router-dom'
 
 
 function CommonSection(props) {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })
+    }
     return (
         <section className="section-Margin">
             <div className="row">
@@ -33,7 +41,7 @@ function CommonSection(props) {
                                     <img className="ImgShadowEffect" src={props.imgURL} alt='' />
                             }
                             {props.linkUrl ? <a className="card-link" href={props.linkUrl} download={props.download}>{props.linkText}</a> : ''}
-                            {props.internalUrl ? <Link className="card-link">{props.linkText}</Link> : ''}
+                            {props.internalUrl ? <Link to={props.internalUrl} onClick={scrollToTop} className="card-link">{props.linkText}</Link> : ''}
 
                         </>
                     </ScrollAnimation>
