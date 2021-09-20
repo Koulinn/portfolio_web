@@ -437,7 +437,7 @@ footer {
 .commonSection-image-wrapper {
   img{
     width: 100%;
-    max-height: 256px;
+    height: 240px;
     object-fit: cover;
   }
   .card-link {
@@ -464,14 +464,14 @@ footer {
 
 .arrowDesktop{
   button{
-    top: calc(25% + 22px);
+    top: calc(33%);
 
   }
 }
 
 .arrowDesktopSmall{
   button{
-    top: calc(19% + 22px);
+    top: calc(33%);
 
   }
 
@@ -479,8 +479,15 @@ footer {
 
 .arrowDesktopGigantic{
   button{
-    top: calc(28% + 22px);
+    top: calc(33%);
 
   }
 
+}
+
+#about{
+  h4{
+    color: $dark;
+    font-size: medium;
+  }
 }

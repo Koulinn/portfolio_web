@@ -5,6 +5,7 @@ import CommonSection from '../shared/CommonSection'
 import BGTop from '../shared/BGTop'
 
 
+
 function Home(props) {
     return (
         <>
@@ -12,17 +13,32 @@ function Home(props) {
             <Container className="p-0 position-relative" fluid>
                 <BGTop></BGTop>
                 <Container>
-                    <CommonSection
-                        title={'Home is still under development'}
-                        text={'this page is under development'}
-                        order="0"
-                        spanText="<br>">
 
-                    </CommonSection>
                     <CommonSection
-                        title={'Home is still under development'}
-                        text={'this page is under development'}
-                        order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>">
+                        title={'A well rounded professional with UX and Full-stack development skills'}
+                        text={`Check out my UX and Web development projects`}
+                        order="0"
+                        spanText="<br>"
+                        imgURL={'https://res.cloudinary.com/koulin/image/upload/v1632159321/Portfolio/bigstock-Lego-Workers_1_y3wssk.jpg'}
+                        isCarousel={false}
+                        internalUrl='/portfolio'
+                        linkText={`Go to portfolio`}
+                    >
+                    </CommonSection>
+
+
+
+                    <CommonSection
+                        title={`Always in continuous education`}
+                        text={'To keep pace with new technologies and to deliver great results'}
+                        order={props.isTabletOrMobile ? "0" : "2"} 
+                        spanText="<br>"
+                        imgURL={'https://res.cloudinary.com/koulin/image/upload/v1632161631/Portfolio/joao-ferrao-4YzrcDNcRVg-unsplash_1_pb4gcd.jpg'}
+                        isCarousel={false}
+                        internalUrl='/resume'
+                        linkText={`Go to resume`}
+                        
+                        >
 
                     </CommonSection>
                 </Container>

@@ -18,7 +18,7 @@ const timeLineContent = [
         icon: <IoSchoolOutline/>,
         textH3: 'Strive School - Student',
         textH4: 'Europe',
-        textP : 'Full-stack web developer Bootcamp'
+        textP : 'Full-stack web developer Bootcamp, everyday a new challenge to solve. We have a learning environment that mimics agile teams.'
     },
     {
         className : 'vertical-timeline-element--custom',
@@ -27,7 +27,7 @@ const timeLineContent = [
         icon: <RiSuitcaseLine/>,
         textH3: 'UX researcher/designer at NVX Solutions',
         textH4: 'Brazil',
-        textP : 'Wireframes, UX research, User journey, Persona'
+        textP : 'Wireframes, UX research, User journey, Persona, styleguides, card-sorting, workshops, ideation session, usability tests'
     },
     {
         className : 'vertical-timeline-element--custom',
@@ -45,7 +45,7 @@ const timeLineContent = [
         icon: <RiSuitcaseLine/>,
         textH3: 'Hospitality sector',
         textH4: 'UK',
-        textP : 'Worked on 2 restaurants one as supervisor'
+        textP : 'Team leader'
     },
     {
         className : 'vertical-timeline-element--custom',
@@ -63,7 +63,7 @@ const timeLineContent = [
         icon: <RiSuitcaseLine color='#ffffff'/>,
         textH3: 'Veterinarian Surgeon',
         textH4: 'Brazil',
-        textP : 'Yep, I have a degree in veterinary medicine and I love cats :)'
+        textP : 'Nobody know best what under pressure means than an anaesthetist, that was my main area of knowledge.'
     },
     {
         className : 'vertical-timeline-element--custom',
