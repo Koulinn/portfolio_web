@@ -5,13 +5,7 @@ import { ReactComponent as MainLogo } from '../../assets/logo/Logo.svg'
 import Typewriter from 'typewriter-effect';
 
 
-{/* <Typewriter
-  options={{
-    strings: ['Hello', 'World'],
-    autoStart: true,
-    loop: true,
-  }}
-/> */}
+
 
 function Hero(props) {
     return (

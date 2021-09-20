@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 import Hero from '../hero/Hero'
 import CommonSection from '../shared/CommonSection'
 import BGTop from '../shared/BGTop'
-import { Link } from 'react-router-dom'
+
 
 
 function Home(props) {
@@ -29,9 +29,16 @@ function Home(props) {
 
 
                     <CommonSection
-                        title={'Home is still under development'}
-                        text={'this page is under development'}
-                        order={props.isTabletOrMobile ? "0" : "2"} spanText="<br>">
+                        title={`Always in continuous education`}
+                        text={'To keep pace with new technologies and to deliver great results'}
+                        order={props.isTabletOrMobile ? "0" : "2"} 
+                        spanText="<br>"
+                        imgURL={'https://res.cloudinary.com/koulin/image/upload/v1632161631/Portfolio/joao-ferrao-4YzrcDNcRVg-unsplash_1_pb4gcd.jpg'}
+                        isCarousel={false}
+                        internalUrl='/resume'
+                        linkText={`Go to resume`}
+                        
+                        >
 
                     </CommonSection>
                 </Container>
