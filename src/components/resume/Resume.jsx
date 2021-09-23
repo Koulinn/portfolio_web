@@ -21,7 +21,7 @@ function Resume(props) {
                         text={'A well rounded Web UX desinerloper with great leadership skills, creativity and always read to play in any team! '}
                         order="0"
                         spanText="<br>"
-                        linkUrl='https://1drv.ms/b/s!AnfHEZPn_w1DrOUnQ4VGDNQMHnYPpA'
+                        linkUrl='https://1drv.ms/b/s!AnfHEZPn_w1DrOUo1AMUBcEKBjCIZw'
                         linkText={`Download Rafa Lima CV`}
                         download={true}
 
