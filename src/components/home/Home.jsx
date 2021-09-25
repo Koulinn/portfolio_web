@@ -15,7 +15,7 @@ function Home(props) {
                 <Container>
 
                     <CommonSection
-                        title={'A well rounded professional with UX and Full-stack development skills'}
+                        title={'A well rounded professional with UX and Web development skills'}
                         text={`Check out my UX and Web development projects`}
                         order="0"
                         spanText="<br>"
@@ -29,8 +29,8 @@ function Home(props) {
 
 
                     <CommonSection
-                        title={`Always in continuous education`}
-                        text={'To keep pace with new technologies and to deliver great results'}
+                        title={`Always in continuing education`}
+                        text={'To keep pace with new technologies to deliver the best results'}
                         order={props.isTabletOrMobile ? "0" : "2"} 
                         spanText="<br>"
                         imgURL={'https://res.cloudinary.com/koulin/image/upload/v1632161631/Portfolio/joao-ferrao-4YzrcDNcRVg-unsplash_1_pb4gcd.jpg'}
