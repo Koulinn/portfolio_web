@@ -18,14 +18,14 @@ const timeLineContent = [
         icon: <IoSchoolOutline/>,
         textH3: 'Strive School - Student',
         textH4: 'Europe',
-        textP : 'Full-stack web developer Bootcamp, everyday a new challenge to solve. We have a learning environment that mimics agile teams.'
+        textP : 'Full-stack web developer Bootcamp, everyday a new challenge to solve. It has a learning environment that mimics agile teams.'
     },
     {
         className : 'vertical-timeline-element--custom',
         date: "2020 - 2021",
         iconStyle: iconStyle,
         icon: <RiSuitcaseLine/>,
-        textH3: 'UX researcher/designer at NVX Solutions',
+        textH3: 'UX designer at NVX Solutions',
         textH4: 'Brazil',
         textP : 'Wireframes, UX research, User journey, Persona, styleguides, card-sorting, workshops, ideation session, usability tests'
     },
@@ -35,7 +35,7 @@ const timeLineContent = [
         iconStyle: iconStyle,
         icon: <IoSchoolOutline/>,
         textH3: 'Interaction Design Foundation',
-        textH4: 'WorldWide',
+        textH4: 'International',
         textP : 'Self-paced online UX design school'
     },
     {
@@ -52,7 +52,7 @@ const timeLineContent = [
         date: "2013 - 2015",
         iconStyle: iconStyle,
         icon: <IoSchoolOutline/>,
-        textH3: 'Specialization in Traditional Chinese Medicine (Acupuncture)',
+        textH3: 'Acupuncture',
         textH4: 'Institute Jaqueline Peker/BR',
         textP : 'This was my kick-off to change my carer, because we studied human behaviour accordingly with acupuncture.'
     },
@@ -72,7 +72,7 @@ const timeLineContent = [
         icon: <IoSchoolOutline currentColor='white'/>,
         textH3: 'Veterinary medicine student',
         textH4: 'UDESC/Brazil',
-        textP : 'Did I already say that I love cats?'
+        textP : 'Did I already told you that I love cats?'
     },
     
 ]

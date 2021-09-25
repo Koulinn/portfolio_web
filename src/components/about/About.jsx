@@ -13,15 +13,15 @@ function About(props) {
             image: 'https://res.cloudinary.com/koulin/image/upload/v1632149831/Portfolio/WhatsApp_Image_2021-09-20_at_15.50.41_wjrspg.jpg'
         },
         {
-            title: 'Martial arts helps me to keep balance in my live',
+            title: 'Martial arts helps me to keep balance',
             image: 'https://res.cloudinary.com/koulin/image/upload/v1632149831/Portfolio/WhatsApp_Image_2021-09-20_at_15.52.07_cm0szs.jpg'
         },
         {
-            title: 'I love Phillip Pullman books, this guy really got the talent',
+            title: 'I love Phillip Pullman books, this guy really has the talent',
             image: 'https://res.cloudinary.com/koulin/image/upload/v1632149831/Portfolio/HDM_cunz1u.jpg'
         },
         {
-            title: 'I went into a kung-fu school in China for 3 weeks this was the most crazy experience I ever had',
+            title: 'I went into a kung-fu school in China for 3 weeks, this was the craziest experience I ever had',
             image: 'https://res.cloudinary.com/koulin/image/upload/v1632149831/Portfolio/WhatsApp_Image_2021-09-20_at_15.49.56_exfkb8.jpg'
         }
     ]
