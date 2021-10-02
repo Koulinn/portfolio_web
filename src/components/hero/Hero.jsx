@@ -19,7 +19,7 @@ function Hero(props) {
 
                     <div id="logo-Hero" className="d-flex flex-column align-items-center justify-content-center">
                         <MainLogo></MainLogo>
-                        <span className="hero-TextLogo mt-2">UX Designer/Web Development</span>
+                        <span className="hero-TextLogo mt-2">UX Designer/Web Developer</span>
                     </div>
 
                     :
