@@ -63,7 +63,7 @@ const timeLineContent = [
         icon: <RiSuitcaseLine color='#ffffff'/>,
         textH3: 'Veterinarian Surgeon',
         textH4: 'Brazil',
-        textP : 'Nobody know best what under pressure means than an anaesthetist, that was my main area of knowledge.'
+        textP : 'I always created a trustable communication channel, to have the pet owner as the main entity of any therapy.'
     },
     {
         className : 'vertical-timeline-element--custom',
@@ -72,7 +72,7 @@ const timeLineContent = [
         icon: <IoSchoolOutline currentColor='white'/>,
         textH3: 'Veterinary medicine student',
         textH4: 'UDESC/Brazil',
-        textP : 'Did I already told you that I love cats?'
+        textP : 'Did I tell you already, that I love cats?'
     },
     
 ]

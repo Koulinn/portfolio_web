@@ -18,7 +18,7 @@ function Resume(props) {
                         imgURL={'https://res.cloudinary.com/koulin/image/upload/v1631900496/Portfolio/CV_ov15mg.jpg'}
                         isCarousel={false}
                         title={'Check out my CV'}
-                        text={'A well rounded Web UX desinerloper with great leadership skills, creativity and always read to play in any team! '}
+                        text={'A well rounded Web UX desinerloper with great leadership skills, creativity and always ready to play in any team! '}
                         order="0"
                         spanText="<br>"
                         linkUrl='https://1drv.ms/b/s!AnfHEZPn_w1DrOUo1AMUBcEKBjCIZw'
