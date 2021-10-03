@@ -33,7 +33,7 @@ function About(props) {
                 <Container>
                     <CommonSection
                         title={`I'm always learning something new`}
-                        text={'I love changing environments where we need to be always researching and adapting to achieve the best results and deliver an outstanding project'}
+                        text={'I love challenging environments where we need to be always researching and adapting to achieve the best results and deliver an outstanding project'}
                         order="0"
                         spanText="<br>"
                         imgURL={'https://res.cloudinary.com/koulin/image/upload/v1632149266/Portfolio/mika-baumeister-Y_LgXwQEx2c-unsplash_1_lbbyvo.jpg'}
