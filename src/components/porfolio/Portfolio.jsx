@@ -20,7 +20,7 @@ function Portfolio(props) {
         },
         {
             title: 'Claris',
-            link: 'https://www.figma.com/proto/IxlFpW2edfQpur25OZhAG6/Competenza?node-id=0%3A1&viewport=431%2C48%2C0.83&scaling=min-zoom&starting-point-node-id=506%3A413&show-proto-sidebar=1'
+            link: 'https://www.figma.com/proto/IxlFpW2edfQpur25OZhAG6/Competenza?page-id=0%3A1&node-id=353%3A239&viewport=241%2C48%2C1&scaling=min-zoom&starting-point-node-id=639%3A2117&show-proto-sidebar=1'
         }
     ]
 
