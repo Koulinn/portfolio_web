@@ -8,7 +8,7 @@ function ContactText(props) {
         <div id="contact-section-text" className="d-flex flex-column align-items-center align-items-md-start">
             <h2>Contact <span className="spanText">{props.spanText}</span></h2>
             <div className="d-flex align-items-center mb-3">
-                <p>+44 07985199302</p>
+                <p>+44 7985199302</p>
                 <div className="d-flex icons-WT">
                     <div className="ml-3 cursorPointer">
                         <Whatssap onClick={()=> window.location.replace('https://wa.me/4407985199302?text=Hello Rafa! I would like to talk with you about an opportunity.')} />
@@ -19,9 +19,9 @@ function ContactText(props) {
                 </div>
             </div>
             <div className="d-flex align-items-center mb-3">
-                <p>drdverzola@gmail.com</p>
+                <p>rafauxdev@gmail.com</p>
                 <div className="ml-3 cursorPointer">
-                    <AiOutlineMail onClick={()=> window.location.replace("mailto:drdverzola@gmail.com")} />
+                    <AiOutlineMail onClick={()=> window.location.replace("mailto:rafauxdev@gmail.com")} />
                 </div>
 
             </div>

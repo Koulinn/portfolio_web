@@ -42,7 +42,7 @@ function NavBar({ isMobile, isTabletOrMobile, location, history }) {
                             <div id="logo-NavBar" className="d-none d-md-flex flex-column justify-content-center align-items-center">
                                 {scrollY > 60 ? <WhiteLogo /> : <Logo />}
 
-                                <span className={scrollY > 60 ? 'transitionFadeOut m-0' : 'transitionFadeIn mt-2'}>UX Designer/Web developer
+                                <span className={scrollY > 60 ? 'transitionFadeOut m-0' : 'transitionFadeIn mt-2'}>UX Designer/Full-stack Web developer
                                 </span>
 
                             </div>
