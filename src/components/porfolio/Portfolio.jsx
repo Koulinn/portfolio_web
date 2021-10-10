@@ -32,16 +32,16 @@ function Portfolio(props) {
             info: 'Use username Rafux with password test1234 or create your own account! Do not send any sensitive/real data!'
         },
         {
-            link: 'https://koulinn.github.io/',
+            link: 'https://koulinn.github.io/M4-SpotifyREACT/',
             image: 'https://res.cloudinary.com/koulin/image/upload/v1631558002/Portfolio/https_3A_2F_2Fd1e00ek4ebabms.cloudfront.net_2Fproduction_2F8cd98967-b3ee-43f2-8cd6-7c76741d283c_cdb4bw.jpg',
             title: 'Clone Spotify',
             info: 'Click on home to start'
         },
-        {
-            link: '',
-            image: 'https://res.cloudinary.com/koulin/image/upload/v1631558066/Portfolio/desarrollo-web-marketplace_hnzakj.jpg',
-            title: 'Marketplace'
-        },
+        // {
+        //     link: '',
+        //     image: 'https://res.cloudinary.com/koulin/image/upload/v1631558066/Portfolio/desarrollo-web-marketplace_hnzakj.jpg',
+        //     title: 'Marketplace'
+        // },
     ]
     return (
         <>
@@ -63,7 +63,7 @@ function Portfolio(props) {
 
                     </CommonSection>
                     <CommonSection
-                        title={'Web development projects'}
+                        title={'FS-development projects'}
                         text={'Some projects I created whilst at Strive School'}
                         order={props.isTabletOrMobile ? "0" : "2"}
                         spanText="<br>"
