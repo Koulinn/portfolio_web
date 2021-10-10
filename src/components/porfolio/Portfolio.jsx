@@ -37,11 +37,11 @@ function Portfolio(props) {
             title: 'Clone Spotify',
             info: 'Click on home to start'
         },
-        {
-            link: '',
-            image: 'https://res.cloudinary.com/koulin/image/upload/v1631558066/Portfolio/desarrollo-web-marketplace_hnzakj.jpg',
-            title: 'Marketplace'
-        },
+        // {
+        //     link: '',
+        //     image: 'https://res.cloudinary.com/koulin/image/upload/v1631558066/Portfolio/desarrollo-web-marketplace_hnzakj.jpg',
+        //     title: 'Marketplace'
+        // },
     ]
     return (
         <>
@@ -63,7 +63,7 @@ function Portfolio(props) {
 
                     </CommonSection>
                     <CommonSection
-                        title={'Web development projects'}
+                        title={'FS-development projects'}
                         text={'Some projects I created whilst at Strive School'}
                         order={props.isTabletOrMobile ? "0" : "2"}
                         spanText="<br>"
