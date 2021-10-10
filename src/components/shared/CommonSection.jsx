@@ -2,9 +2,11 @@ import React from 'react'
 import StackedCarrousel from './Carousel/StackedCarrousel'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link, withRouter } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
 
 
 function CommonSection(props) {
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 767px)' })
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -32,7 +34,7 @@ function CommonSection(props) {
 
 
 
-                <div className="commonSection-image-wrapper col-12 col-md-6">
+                <div className={"commonSection-image-wrapper col-12 col-md-6 " + (isTabletOrMobile ? "mt-3" : '') }>
 
                     <ScrollAnimation animateIn={props.order === "2" ? 'animate__fadeInTopLeft' : 'animate__fadeInTopRight'} offset={200} >
                         <>

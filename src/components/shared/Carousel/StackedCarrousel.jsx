@@ -54,7 +54,7 @@ function StackedCarrousel(props) {
                 {props.carouselItems.map((item, i) =>
 
                     <>
-                        <div className={'d-flex flex-column justify-content-center align-content-center'}>
+                        <div className={'d-flex flex-column justify-content-center align-content-center ' + (isTabletOrMobile ? "mt-3" : '')  }>
                             <a href={item.link}><img className="carousel-image" height='256px' src={item.image} alt="" /></a>
                             <a href={item.link} className="mt-3 mb-1"><h4>{item.title}</h4></a>
                             <h6>{item.info}</h6>
