@@ -18,7 +18,7 @@ const timeLineContent = [
         icon: <IoSchoolOutline/>,
         textH3: 'Strive School - Student',
         textH4: 'Europe',
-        textP : 'Full-stack Web developer Bootcamp, everyday a new challenge to solve. It has a learning environment that mimics agile teams.'
+        textP : 'Full-stack developer Bootcamp, everyday a new challenge to solve. It has a learning environment that mimics agile teams.'
     },
     {
         className : 'vertical-timeline-element--custom',
