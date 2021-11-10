@@ -1,7 +1,9 @@
 import React from 'react'
 import { ReactComponent as Telegram } from '../../../assets/Icons/telegram.svg'
 import { ReactComponent as Whatssap } from '../../../assets/Icons/whatssap.svg'
+import { ReactComponent as MdOutlineLocationOn } from '../../../assets/Icons/location_on_black_24dp.svg'
 import { AiOutlineMail } from 'react-icons/ai';
+
 
 function ContactText(props) {
     return (
@@ -22,6 +24,13 @@ function ContactText(props) {
                 <p>rafauxdev@gmail.com</p>
                 <div className="ml-3 cursorPointer">
                     <AiOutlineMail onClick={()=> window.location.replace("mailto:rafauxdev@gmail.com")} />
+                </div>
+
+            </div>
+            <div className="d-flex align-items-center mb-3">
+                <p>Leeds-UK</p>
+                <div className="ml-3 cursorPointer">
+                    <MdOutlineLocationOn />
                 </div>
 
             </div>
