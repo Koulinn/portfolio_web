@@ -32,8 +32,8 @@ function About(props) {
                 <BGTop></BGTop>
                 <Container>
                     <CommonSection
-                        title={`I'm always learning something new`}
-                        text={'I love challenging environments where we need to go beyond to achieve great results and deliver an outstanding product'}
+                        title={`I'm passionate about interaction design and coding`}
+                        text={'I love to bring the user at the centre of the design thinking process and create seamless interaction'}
                         order="0"
                         spanText="<br>"
                         imgURL={'https://res.cloudinary.com/koulin/image/upload/v1632149266/Portfolio/mika-baumeister-Y_LgXwQEx2c-unsplash_1_lbbyvo.jpg'}

@@ -18,7 +18,7 @@ function Resume(props) {
                         imgURL={'https://res.cloudinary.com/koulin/image/upload/v1632161631/Portfolio/joao-ferrao-4YzrcDNcRVg-unsplash_1_pb4gcd.jpg'}
                         isCarousel={false}
                         title={'Check out my CV'}
-                        text={'A well rounded Web UX desinerloper with great leadership skills, creativity and always ready to play in any team! '}
+                        text={'A well rounded Web developer ready to play in any team!'}
                         order="0"
                         spanText="<br>"
                         linkUrl='https://drive.google.com/file/d/1Mn5pOEyFAHgTeWe6bUrygdSRyGq7iei7/view?usp=sharing'
