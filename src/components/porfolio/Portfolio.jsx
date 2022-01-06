@@ -47,7 +47,6 @@ function Portfolio(props) {
                 isTabletOrMobile={props.isTabletOrMobile}
                 isMobile={props.isMobile}
                 heroTextFirst={'Take a peek'}
-                heroTextSpan={'<br>'}
                 heroTextSecond='at projects I have done'
             ></Hero>
             <Container className='p-0 position-relative' fluid>
@@ -55,7 +54,7 @@ function Portfolio(props) {
                 <Container>
                     <CommonSection
                         title={'FS-development projects'}
-                        text={`I'm always creating something to keep improving and discovering new technologies.`}
+                        text={`I'm always creating something to keep improving and discover new technologies.`}
                         isCarousel={true}
                         carouselItems={carouselItems}
                         order='0'
