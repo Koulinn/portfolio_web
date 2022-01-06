@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../hero/Hero'
 import { Container } from 'react-bootstrap'
 import BGTop from '../shared/BGTop'
 import CommonSection from '../shared/CommonSection'
+import { Element, scroller } from 'react-scroll'
 
 function About(props) {
+    useEffect(() => {
+        scroller.scrollTo('aboutSection', {
+            duration: 1000,
+            delay: 100,
+            smooth: true,
+            offset: -150,
+        })
+    }, [])
+
     const items = [
         {
             title: `One day I will get better at it`,
@@ -33,27 +43,29 @@ function About(props) {
             ></Hero>
             <Container id='about' className='p-0 position-relative' fluid>
                 <BGTop></BGTop>
-                <Container>
-                    <CommonSection
-                        title={`I'm passionate about interaction design and coding`}
-                        text={
-                            'I love to bring the user at the centre of the design thinking process and create seamless interaction'
-                        }
-                        order='0'
-                        imgURL={
-                            'https://res.cloudinary.com/koulin/image/upload/v1632149266/Portfolio/mika-baumeister-Y_LgXwQEx2c-unsplash_1_lbbyvo.jpg'
-                        }
-                        isCarousel={false}
-                    ></CommonSection>
-                    <CommonSection
-                        order={props.isTabletOrMobile ? '0' : '2'}
-                        title={`Discover the unknown`}
-                        text={`I like to keep active, martial arts helps me to keep balance between nature and modern life`}
-                        isCarousel={true}
-                        carouselItems={items}
-                    ></CommonSection>
-                    {/* <Stack ></Stack> */}
-                </Container>
+                <Element name='aboutSection'>
+                    <Container>
+                        <CommonSection
+                            title={`I'm passionate about interaction design and coding`}
+                            text={
+                                'I love to bring the user at the centre of the design thinking process and create seamless interaction'
+                            }
+                            order='0'
+                            imgURL={
+                                'https://res.cloudinary.com/koulin/image/upload/v1632149266/Portfolio/mika-baumeister-Y_LgXwQEx2c-unsplash_1_lbbyvo.jpg'
+                            }
+                            isCarousel={false}
+                        ></CommonSection>
+                        <CommonSection
+                            order={props.isTabletOrMobile ? '0' : '2'}
+                            title={`Discover the unknown`}
+                            text={`I like to keep active, martial arts helps me to keep balance between nature and modern life`}
+                            isCarousel={true}
+                            carouselItems={items}
+                        ></CommonSection>
+                        {/* <Stack ></Stack> */}
+                    </Container>
+                </Element>
             </Container>
         </>
     )

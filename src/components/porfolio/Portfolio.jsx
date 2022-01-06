@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../hero/Hero'
 import { Container } from 'react-bootstrap'
 import BGTop from '../shared/BGTop'
 import CommonSection from '../shared/CommonSection'
 import List from '../shared/List'
+import { Element, scroller } from 'react-scroll'
 
 function Portfolio(props) {
+    useEffect(() => {
+        scroller.scrollTo('portfolioSection', {
+            duration: 1000,
+            delay: 100,
+            smooth: true,
+            offset: -150,
+        })
+    }, [])
     const items = [
         {
             title: 'OneHealth',
@@ -51,29 +60,31 @@ function Portfolio(props) {
             ></Hero>
             <Container className='p-0 position-relative' fluid>
                 <BGTop></BGTop>
-                <Container>
-                    <CommonSection
-                        title={'FS-development projects'}
-                        text={`I'm always creating something to keep improving and discover new technologies.`}
-                        isCarousel={true}
-                        carouselItems={carouselItems}
-                        order='0'
-                    />
-                    <CommonSection
-                        imgURL={
-                            'https://res.cloudinary.com/koulin/image/upload/v1635060036/Portfolio/portfolio_img_iu6obo.jpg'
-                        }
-                        isCarousel={false}
-                        title={'UX projects'}
-                        text={
-                            'I also love UX design, after all the real user is key to any successful idea'
-                        }
-                        order={props.isTabletOrMobile ? '0' : '2'}
-                        linkUrl='https://drive.google.com/file/d/1FNc4KKIHjcGmSCyByAA6Dl1kSlQZZ4p1/view?usp=sharing'
-                        linkText={`Download UX Portfolio`}
-                        // subsection={<List items={items} />}
-                    />
-                </Container>
+                <Element name='portfolioSection'>
+                    <Container>
+                        <CommonSection
+                            title={'FS-development projects'}
+                            text={`I'm always creating something to keep improving and discover new technologies.`}
+                            isCarousel={true}
+                            carouselItems={carouselItems}
+                            order='0'
+                        />
+                        <CommonSection
+                            imgURL={
+                                'https://res.cloudinary.com/koulin/image/upload/v1635060036/Portfolio/portfolio_img_iu6obo.jpg'
+                            }
+                            isCarousel={false}
+                            title={'UX projects'}
+                            text={
+                                'I also love UX design, after all the real user is key to any successful idea'
+                            }
+                            order={props.isTabletOrMobile ? '0' : '2'}
+                            linkUrl='https://drive.google.com/file/d/1FNc4KKIHjcGmSCyByAA6Dl1kSlQZZ4p1/view?usp=sharing'
+                            linkText={`Download UX Portfolio`}
+                            // subsection={<List items={items} />}
+                        />
+                    </Container>
+                </Element>
             </Container>
         </>
     )
