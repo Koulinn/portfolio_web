@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap');
 
 $primary: #001e55;
 $primaryBG: rgb(0 30 85 / 97%);
@@ -8,486 +8,474 @@ $dark: #18181a;
 $BGGrad: (180deg, #c9e1ee 51.61%, #ecf5fa 100%);
 $light: #e2f0f8;
 $BGFooter: (
-  180deg,
-  rgb(146 156 161 / 50%) 0%,
-  rgba(201, 225, 238, 0.075) 100%,
-  rgba(196, 196, 196, 0.6)
+    180deg,
+    rgb(146 156 161 / 50%) 0%,
+    rgba(201, 225, 238, 0.075) 100%,
+    rgba(196, 196, 196, 0.6)
 );
 
 %menufont {
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 %menuEffectInitial {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  height: 4px;
-  width: 32px;
-  background-color: $primary;
-  border-radius: 20px;
-  transform: translateX(64px);
-  opacity: 0;
-  transition: all 0.7s;
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    height: 4px;
+    width: 32px;
+    background-color: $primary;
+    border-radius: 20px;
+    transform: translateX(64px);
+    opacity: 0;
+    transition: all 0.7s;
 }
 
 %menuEffectActive {
-  transform: translateX(0px);
-  opacity: 1;
-  background-color: $primary1;
+    transform: translateX(0px);
+    opacity: 1;
+    background-color: $primary1;
 }
 
 %menuEffectHoverGrey {
-  opacity: 1;
-  background-color: #18181a;
-  height: 2px;
-  width: 100%;
+    opacity: 1;
+    background-color: #18181a;
+    height: 2px;
+    width: 100%;
 }
 
 body {
-  font-family: "Heebo", sans-serif !important;
-  color: $dark;
+    font-family: 'Heebo', sans-serif !important;
+    color: $dark;
 }
 
 p {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 a:hover {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 #BG-NavBar {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transition: 0.7s;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.7s;
 }
 
 #logo-NavBar {
-  svg {
-    width: 64px;
-    height: 64px;
-  }
-  span {
-    font-size: 16px;
-  }
+    svg {
+        width: 64px;
+        height: 64px;
+    }
+    span {
+        font-size: 16px;
+    }
 }
 
 .BG-NavBarColor {
-  background-color: $primaryBG;
-  opacity: 0.95;
-  svg {
-    color: $light;
-  }
-  span {
-    color: $light;
-  }
+    background-color: $primaryBG;
+    opacity: 0.95;
+    svg {
+        color: $light;
+    }
+    span {
+        color: $light;
+    }
 }
 
 .transitionFadeIn {
-  opacity: 1;
-  transition: all 0.7s;
+    opacity: 1;
+    transition: all 0.7s;
 }
 
 .transitionFadeOut {
-  opacity: 0;
-  transition: all 0.7s;
-  height: 0;
+    opacity: 0;
+    transition: all 0.7s;
+    height: 0;
 }
 
 #Hero {
-  background-image: linear-gradient(
-      180deg,
-      rgba(201, 225, 238, 0.15) 0%,
-      #c9e1ee 89.58%
-    ),
-    url("../assets/BG/BGPng.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 256px inherit;
+    background-image: linear-gradient(
+            180deg,
+            rgba(201, 225, 238, 0.15) 0%,
+            #c9e1ee 89.58%
+        ),
+        url('../assets/BG/BGPng.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 256px inherit;
 
-  div.container {
-    padding: 128px 16px;
-  }
+    div.container {
+        padding: 128px 16px;
+    }
 }
 
 .invert {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .background {
-  max-height: 292px;
-  path {
-    fill: linear-gradient($BGGrad);
-  }
-}
-
-.spanText {
-  font-size: 16px;
-  font-weight: 300;
+    max-height: 292px;
+    path {
+        fill: linear-gradient($BGGrad);
+    }
 }
 
 #logo-Hero {
-  svg {
-    height: 128px;
-    width: 128px;
-  }
+    svg {
+        height: 128px;
+        width: 128px;
+    }
 }
 
 .BG-MobileTablet-Menu {
-  box-shadow: inset 0 0 2000px rgba(0, 30, 85, 0.7);
+    box-shadow: inset 0 0 2000px rgba(0, 30, 85, 0.7);
 }
 
 .font-Icon {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .cursorPointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .Nav-font-menu {
-  @extend %Nav-Menu-Font;
+    @extend %Nav-Menu-Font;
 }
 .navbar-nav {
-  a {
-    @extend %Nav-Menu-Font;
-    position: relative;
-    text-decoration: none;
-    width: fit-content;
-  }
-  a::before {
-    @extend %menuEffectInitial;
-  }
-  a:hover::before {
-    @extend %menuEffectActive;
-    @extend %menuEffectHoverGrey;
-    background-color: #e2f0f8;
-  }
+    a {
+        @extend %Nav-Menu-Font;
+        position: relative;
+        text-decoration: none;
+        width: fit-content;
+    }
+    a::before {
+        @extend %menuEffectInitial;
+    }
+    a:hover::before {
+        @extend %menuEffectActive;
+        @extend %menuEffectHoverGrey;
+        background-color: #e2f0f8;
+    }
 
-  a.active {
-    font-weight: 500;
-  }
-  a.active::before {
-    @extend %menuEffectActive;
-  }
-  a.active:hover::before {
-    @extend %menuEffectActive;
-    width: 32px;
-    height: 4px;
-  }
+    a.active {
+        font-weight: 500;
+    }
+    a.active::before {
+        @extend %menuEffectActive;
+    }
+    a.active:hover::before {
+        @extend %menuEffectActive;
+        width: 32px;
+        height: 4px;
+    }
 }
 
 .navbar-nav.fontDark {
-  a:hover::before {
-    @extend %menuEffectActive;
-    @extend %menuEffectHoverGrey;
-  }
-  a.active:hover::before {
-    background-color: $primary1;
-  }
+    a:hover::before {
+        @extend %menuEffectActive;
+        @extend %menuEffectHoverGrey;
+    }
+    a.active:hover::before {
+        background-color: $primary1;
+    }
 }
 
 %Nav-Menu-Font {
-  font-size: 1.25rem;
-  color: $light !important;
-  letter-spacing: 1px;
+    font-size: 1.25rem;
+    color: $light !important;
+    letter-spacing: 1px;
 }
 
 .customCarouselDot {
-  background: #6aa0bd85;
-  border-radius: 20px;
-  width: 32px;
-  height: 8px;
-  border-color: transparent;
+    background: #6aa0bd85;
+    border-radius: 20px;
+    width: 32px;
+    height: 8px;
+    border-color: transparent;
 }
 
 .customCarouselDot--active {
-  background: $primary1;
+    background: $primary1;
 }
 
 .react-multi-carousel-dot-list {
-  position: inherit !important;
+    position: inherit !important;
 }
 
 .section-Margin {
-  margin-bottom: 128px!important;
+    margin-bottom: 128px !important;
 }
 
 .carousel-image {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  max-height: 256px;
-  border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-height: 256px;
+    border-radius: 20px;
 }
 
 .ImgShadowEffect {
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 20px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
 }
 
 .flexRowAlignCenter {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 // Media query
 
 @media (min-width: 767px) {
-  h1 {
-    font-family: Heebo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: 1.3px;
-  }
-
-  #Hero {
-    div.container {
-      padding: 256px 16px;
+    h1 {
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 1.3px;
     }
-  }
 
-  .fontDark {
-    a {
-      color: $dark !important;
-    }
-  }
-
-  .section-Margin {
-    margin-bottom: 256px!important;
-  }
-
-  footer {
-    #footer {
-      .logo-footer {
-        svg {
-          margin-left: 10px;
+    #Hero {
+        div.container {
+            padding: 256px 16px;
         }
-      }
-      nav ul {
-        transform: translateX(-9%);
-      }
     }
-  }
+
+    .fontDark {
+        a {
+            color: $dark !important;
+        }
+    }
+
+    .section-Margin {
+        margin-bottom: 256px !important;
+    }
+
+    footer {
+        #footer {
+            .logo-footer {
+                svg {
+                    margin-left: 10px;
+                }
+            }
+            nav ul {
+                transform: translateX(-9%);
+            }
+        }
+    }
 }
 
 #contact-section {
-  padding-bottom: 128px;
-  .ImgShadowEffect {
-    max-height: 290px;
-  }
+    padding-bottom: 128px;
+    .ImgShadowEffect {
+        max-height: 290px;
+    }
 }
 
 #contact-section-text {
-  h2 {
-    margin-bottom: 2rem;
-  }
-  p {
-    margin: 0;
-  }
-  svg {
-    height: 32px;
-    width: 32px;
-  }
-
-  .icons-WT {
-    .telegram-icon {
-      svg {
-        transform: scale(0.9);
-        circle {
-          fill: #30a7db;
-        }
-      }
+    h2 {
+        margin-bottom: 2rem;
     }
-  }
+    p {
+        margin: 0;
+    }
+    svg {
+        height: 32px;
+        width: 32px;
+    }
+
+    .icons-WT {
+        .telegram-icon {
+            svg {
+                transform: scale(0.9);
+                circle {
+                    fill: #30a7db;
+                }
+            }
+        }
+    }
 }
 
 footer {
-  padding: 128px 0px;
-  background: linear-gradient($BGFooter);
-  #footer {
-    .logo-footer {
-      margin-bottom: 64px;
-      svg {
-        width: 156px;
-        height: 156px;
-        margin-bottom: 8px;
-      }
-    }
-
-    #contact-section-text {
-      h2 {
-        display: none;
-      }
-    }
-    nav ul {
-      a {
-        text-decoration: none;
-        color: $dark;
-
-        li {
-          display: inline;
+    padding: 128px 0px;
+    background: linear-gradient($BGFooter);
+    #footer {
+        .logo-footer {
+            margin-bottom: 64px;
+            svg {
+                width: 156px;
+                height: 156px;
+                margin-bottom: 8px;
+            }
         }
-      }
 
-      a:hover {
-        li::before {
-          @extend %menuEffectActive;
-          @extend %menuEffectHoverGrey;
+        #contact-section-text {
+            h2 {
+                display: none;
+            }
         }
-      }
+        nav ul {
+            a {
+                text-decoration: none;
+                color: $dark;
 
-      a.active {
-        li {
-          font-weight: 500;
-        }
-        li::before {
-          @extend %menuEffectActive;
-        }
-      }
-      a.active:hover {
-        li::before {
-          @extend %menuEffectActive;
-          width: 32px;
-          height: 4px;
-        }
-      }
+                li {
+                    display: inline;
+                }
+            }
 
-      li {
-        list-style: none;
-        text-align: center;
-        @extend %menufont;
-        position: relative;
-      }
-      li::before {
-        @extend %menuEffectInitial;
-      }
+            a:hover {
+                li::before {
+                    @extend %menuEffectActive;
+                    @extend %menuEffectHoverGrey;
+                }
+            }
+
+            a.active {
+                li {
+                    font-weight: 500;
+                }
+                li::before {
+                    @extend %menuEffectActive;
+                }
+            }
+            a.active:hover {
+                li::before {
+                    @extend %menuEffectActive;
+                    width: 32px;
+                    height: 4px;
+                }
+            }
+
+            li {
+                list-style: none;
+                text-align: center;
+                @extend %menufont;
+                position: relative;
+            }
+            li::before {
+                @extend %menuEffectInitial;
+            }
+        }
+
+        .socialMedia {
+            svg {
+                height: 48px;
+            }
+        }
+        .thinkOut-footer {
+            svg {
+                width: 144px;
+                height: 144px;
+            }
+        }
     }
-
-    .socialMedia {
-      svg {
-        height: 48px;
-      }
-    }
-    .thinkOut-footer {
-      svg {
-        width: 144px;
-        height: 144px;
-      }
-    }
-  }
 }
 
 .sideFadeEffect {
-  overflow: hidden;
-  div {
-    transform: translateX(-100%);
-    transition: 1.5s;
-    opacity: 0;
-  }
+    overflow: hidden;
+    div {
+        transform: translateX(-100%);
+        transition: 1.5s;
+        opacity: 0;
+    }
 }
 
 .sideFadeEffectShow {
-  div {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    div {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .sectionImgsLeft {
-  div {
-    transform: translateX(-200%);
-    opacity: 0;
-    transition: 1.5s;
-  }
+    div {
+        transform: translateX(-200%);
+        opacity: 0;
+        transition: 1.5s;
+    }
 }
 
 .sectionImgsRight {
-  div {
-    transform: translateX(200%);
-    opacity: 0;
-    transition: 1.5s;
-  }
+    div {
+        transform: translateX(200%);
+        opacity: 0;
+        transition: 1.5s;
+    }
 }
 
 .sectionImgsShow {
-  div {
-    transform: translateX(0px);
-    opacity: 1;
-  }
+    div {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .vertical-timeline-element--custom {
-      path {
+    path {
         stroke: white;
-      }
+    }
 }
 
-.vertical-timeline-element-icon{
-  stroke: white;
+.vertical-timeline-element-icon {
+    stroke: white;
 }
-
 
 .commonSection-image-wrapper {
-  img{
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-  }
-  .card-link {
-    text-decoration: none;
-    margin-top: 16px;
-    text-align: center;
-    display: block;
-  }
-  .card-link:hover{
-    text-decoration: underline!important;
-  }
-
+    img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+    .card-link {
+        text-decoration: none;
+        margin-top: 16px;
+        text-align: center;
+        display: block;
+    }
+    .card-link:hover {
+        text-decoration: underline !important;
+    }
 }
 
-.list-subsection{
-  div{
-    transition: all .5s;
-  }
-  div:hover{
-    background-color: #c9e1ee;
-    text-decoration: underline !important;
-  }
+.list-subsection {
+    div {
+        transition: all 0.5s;
+    }
+    div:hover {
+        background-color: #c9e1ee;
+        text-decoration: underline !important;
+    }
 }
 
-.arrowDesktop{
-  button{
-    top: calc(33%);
-
-  }
+.arrowDesktop {
+    button {
+        top: calc(33%);
+    }
 }
 
-.arrowDesktopSmall{
-  button{
-    top: calc(33%);
-
-  }
-
+.arrowDesktopSmall {
+    button {
+        top: calc(33%);
+    }
 }
 
-.arrowDesktopGigantic{
-  button{
-    top: calc(33%);
-
-  }
-
+.arrowDesktopGigantic {
+    button {
+        top: calc(33%);
+    }
 }
 
-#about{
-  h4{
-    color: $dark;
-    font-size: medium;
-  }
+#about {
+    h4 {
+        color: $dark;
+        font-size: medium;
+    }
 }
