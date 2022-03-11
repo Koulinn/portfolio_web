@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/portfolio_web/static/css/main.025dd042.chunk.css",
+    "main.js": "/portfolio_web/static/js/main.8eea1fb2.chunk.js",
+    "main.js.map": "/portfolio_web/static/js/main.8eea1fb2.chunk.js.map",
+    "runtime-main.js": "/portfolio_web/static/js/runtime-main.a360abbf.js",
+    "runtime-main.js.map": "/portfolio_web/static/js/runtime-main.a360abbf.js.map",
+    "static/css/2.ae658e3b.chunk.css": "/portfolio_web/static/css/2.ae658e3b.chunk.css",
+    "static/js/2.ba483403.chunk.js": "/portfolio_web/static/js/2.ba483403.chunk.js",
+    "static/js/2.ba483403.chunk.js.map": "/portfolio_web/static/js/2.ba483403.chunk.js.map",
+    "index.html": "/portfolio_web/index.html",
+    "static/css/2.ae658e3b.chunk.css.map": "/portfolio_web/static/css/2.ae658e3b.chunk.css.map",
+    "static/css/main.025dd042.chunk.css.map": "/portfolio_web/static/css/main.025dd042.chunk.css.map",
+    "static/js/2.ba483403.chunk.js.LICENSE.txt": "/portfolio_web/static/js/2.ba483403.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/portfolio_web/static/media/revicons.e8746a62.woff",
+    "static/media/BGSVGTopGrad.5febf890.svg": "/portfolio_web/static/media/BGSVGTopGrad.5febf890.svg",
+    "static/media/GitHub-logo 1.dc3fe135.svg": "/portfolio_web/static/media/GitHub-logo 1.dc3fe135.svg",
+    "static/media/IxDF.21efe369.svg": "/portfolio_web/static/media/IxDF.21efe369.svg",
+    "static/media/Logo.2fe0e8b3.svg": "/portfolio_web/static/media/Logo.2fe0e8b3.svg",
+    "static/media/linkedin.ec63ffeb.svg": "/portfolio_web/static/media/linkedin.ec63ffeb.svg",
+    "static/media/location_on_black_24dp.a76f85cb.svg": "/portfolio_web/static/media/location_on_black_24dp.a76f85cb.svg",
+    "static/media/telegram.28141391.svg": "/portfolio_web/static/media/telegram.28141391.svg",
+    "static/media/thinkOutside.80debf88.svg": "/portfolio_web/static/media/thinkOutside.80debf88.svg",
+    "static/media/whatssap.a1c0a1e0.svg": "/portfolio_web/static/media/whatssap.a1c0a1e0.svg",
+    "static/media/whiteLogo.a7b94672.svg": "/portfolio_web/static/media/whiteLogo.a7b94672.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a360abbf.js",
+    "static/css/2.ae658e3b.chunk.css",
+    "static/js/2.ba483403.chunk.js",
+    "static/css/main.025dd042.chunk.css",
+    "static/js/main.8eea1fb2.chunk.js"
+  ]
+}
