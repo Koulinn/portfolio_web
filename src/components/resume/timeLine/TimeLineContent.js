@@ -16,7 +16,7 @@ const timeLineContent = [
     textH3: "Dedalus - Senior assistant application developer",
     textH4: "UK",
     textP:
-      "Actively participate in projects, provided constructive feedback and deliver my tasks in timely manner. Kept the company standards and got diligence recognition.",
+      "Actively participated in projects, provided constructive feedback, and delivered my tasks in a timely manner. Solved countless bugs and collaborated with professionals from different areas. Created solutions that are scalable following the project standards.",
   },
   {
     className: "vertical-timeline-element--custom",
@@ -28,29 +28,29 @@ const timeLineContent = [
     textH3: "Muni - Full-stack developer (volunteer)",
     textH4: "Brazil",
     textP:
-      "Created stable Full stack applications, provided guidance to aspiring developers, interviewed other volunteers, set standards for the project.",
+      "Currently, it has 8 professionals with different expertise, where we share knowledge. I'm also providing guidance for 2 aspiring developers.",
   },
   {
     className: "vertical-timeline-element--custom",
-    contentStyle: contentStyle,
-    contentArrowStyle: contentArrowStyle,
+    // contentStyle: contentStyle,
+    // contentArrowStyle: contentArrowStyle,
     date: "2021 - 2022",
     iconStyle: iconStyle,
     icon: <IoSchoolOutline />,
     textH3: "Strive School - Tutor (volunteer)",
     textH4: "Europe",
     textP:
-      "I contributed with many student's coding journey, answered their questions, debugged their coding and kept them motivated and engaged with the school.",
+      "I helped more than 30 students during their journey. Kept them engaged and provided assistance when necessary. My focus was always to explain how things worked and how to debug their code.",
   },
   {
     className: "vertical-timeline-element--custom",
-    date: "2020 - 2021",
+    date: "2020 - 2022",
     iconStyle: iconStyle,
     icon: <RiSuitcaseLine />,
-    textH3: "UX designer at NVX Solutions",
+    textH3: "UX designer volunteer",
     textH4: "Brazil",
     textP:
-      "Wireframes, UX research, User journey, Persona, styleguides, card-sorting, workshops, ideation session, usability tests",
+      "Participated in various projects as volunteer. I could got a UX designer senior that mentored my activies and allowed me to get skills that would take years to learn.",
   },
   {
     className: "vertical-timeline-element--custom",
@@ -68,7 +68,8 @@ const timeLineContent = [
     icon: <RiSuitcaseLine />,
     textH3: "Hospitality sector",
     textH4: "UK",
-    textP: "Team leader",
+    textP:
+      "Team leader. I could learn how to keep a team engaged even under stressful circumstances.",
   },
   {
     className: "vertical-timeline-element--custom",
@@ -77,8 +78,7 @@ const timeLineContent = [
     icon: <IoSchoolOutline />,
     textH3: "Acupuncture",
     textH4: "Institute Jaqueline Peker/BR",
-    textP:
-      "This was my kick-off to change my carer, because we studied human behaviour accordingly with acupuncture.",
+    textP: "I also learned principles of human behaviour.",
   },
   {
     className: "vertical-timeline-element--custom",
@@ -88,7 +88,7 @@ const timeLineContent = [
     textH3: "Veterinarian Surgeon",
     textH4: "Brazil",
     textP:
-      "I always created a trustable communication channel, to have the pet owner as the main entity of any therapy.",
+      "I also had a dream of being a vet. Although it's all about problem solving and investigation, but it lacks building.",
   },
   {
     className: "vertical-timeline-element--custom",
@@ -97,7 +97,7 @@ const timeLineContent = [
     icon: <IoSchoolOutline currentColor="white" />,
     textH3: "Veterinary medicine student",
     textH4: "UDESC/Brazil",
-    textP: "Did I tell you already, that I love cats?",
+    textP: "I love cats!",
   },
 ];
 
