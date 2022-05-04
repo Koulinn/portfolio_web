@@ -68,7 +68,7 @@ function Portfolio(props) {
                 "I have passion about UX design. I truly believe the UCD approach can make the whole difference. Make interactions clear is always my goal."
               }
               order={props.isTabletOrMobile ? "0" : "2"}
-              linkUrl="https://drive.google.com/file/d/1jWle1TAMU8Ha8vNANcd4e9CTvhYkRx1o/view?usp=sharing"
+              linkUrl="https://drive.google.com/file/d/1FNc4KKIHjcGmSCyByAA6Dl1kSlQZZ4p1/view?usp=sharing"
               linkText={`Download UX Portfolio`}
               // subsection={<List items={items} />}
             />

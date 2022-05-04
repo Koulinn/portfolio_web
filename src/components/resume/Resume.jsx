@@ -36,7 +36,7 @@ function Resume(props) {
               title={"Check out my CV"}
               text={`I'm a multi-skilled team player who loves to collaborate and solve problems!`}
               order="0"
-              linkUrl="https://drive.google.com/file/d/1KEbsfGDaC7yYKnERwDCH_Xs7Nk_NKaqO/view?usp=sharing"
+              linkUrl="https://drive.google.com/file/d/1Mn5pOEyFAHgTeWe6bUrygdSRyGq7iei7/view?usp=sharing"
               linkText={`Download Rafa Lima CV`}
               download={true}
             ></CommonSection>
