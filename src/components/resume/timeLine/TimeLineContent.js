@@ -13,10 +13,10 @@ const timeLineContent = [
     date: "2022 - present",
     iconStyle: iconStyle,
     icon: <RiSuitcaseLine />,
-    textH3: "Dedalus - Senior assistant application developer",
+    textH3: "Dedalus - Senior assistant developer",
     textH4: "UK",
     textP:
-      "Actively participated in projects, provided constructive feedback, and delivered my tasks in a timely manner. Solved countless bugs and collaborated with professionals from different areas. Created solutions that are scalable following the project standards.",
+      "Actively collaborated with my team and professionals from different areas such as sales, cloud, and testing. Created solutions and solved difficult problems. Taught debugging, developer tools, redux toolkit, REACT to many colleagues. Bring up ideas and concepts to improve the development processes. Shown FIGMA to the team which quickly was adopted by everyone. Collaborated with the sales team to secure a UI project. Started discussions about clean code, scalability and maintainability so everyone could follow the same standards and increase code readability.",
   },
   {
     className: "vertical-timeline-element--custom",
