@@ -51,9 +51,9 @@ function About(props) {
         <Element name="aboutSection">
           <Container>
             <CommonSection
-              title={`I always building something`}
+              title={`Positive mindset`}
               text={
-                "Each project is an opportunity to learn and improve. I love to collaborate with other people and put the user on the center of the process."
+                "Each challenge is an opportunity to learn and improve. I like to keep a positive mindset, we are all humans and there is always room to improve ourselves."
               }
               order="0"
               imgURL={
